@@ -1,2 +1,2 @@
 # Store
-ssm project
+A store management system using SSM
