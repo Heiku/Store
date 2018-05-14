@@ -19,6 +19,7 @@ public class Shop {
     private Integer enableStatus;
     private String advice;
 
+    // releative entity
     private User manager;
     private Area area;
     private ShopCategory shopCategory;
