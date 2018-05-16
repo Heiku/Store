@@ -2,6 +2,8 @@ package com.heiku.snacks.web.admin;
 
 import com.heiku.snacks.entity.Area;
 import com.heiku.snacks.service.AreaService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
@@ -18,6 +20,8 @@ import java.util.Map;
 @RequestMapping("/superadmin")
 public class AreaController {
 
+    Logger logger = LoggerFactory.getLogger(AreaController.class);
+
     @Autowired
     private AreaService areaService;
 
@@ -25,6 +29,9 @@ public class AreaController {
     @RequestMapping(value = "/listarea", method = RequestMethod.GET)
     @ResponseBody
     private Map<String,Object> listArea(){
+        logger.info("====start====");
+        long startTime = System.currentTimeMillis();
+
         Map<String, Object> modelMap = new HashMap<>();
         List<Area> list = new ArrayList<>();
 
@@ -38,6 +45,12 @@ public class AreaController {
             modelMap.put("success", false);
             modelMap.put("errorMsg", e.getMessage());
         }
+
+        logger.error("test error!");
+
+        long endTime = System.currentTimeMillis();
+        logger.debug("costTime:[{}ms]", endTime-  startTime);
+        logger.info("====end====");
 
         return modelMap;
     }
