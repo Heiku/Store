@@ -1,11 +1,50 @@
-2018-05-16 12:11:02.235[main]DEBUG com.heiku.snacks.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(manager_id, area_id, shop_category_id, shop_name, shop_desc, shop_address,phone, shop_img, priority, create_time, last_edit_time, enable_status, advice) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-2018-05-16 12:16:04.595[main]DEBUG com.heiku.snacks.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(manager_id, area_id, shop_category_id, shop_name, shop_desc, shop_address,phone, shop_img, priority, create_time, last_edit_time, enable_status, advice) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-2018-05-16 12:31:18.672[main]DEBUG com.heiku.snacks.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(manager_id, area_id, shop_category_id, shop_name, shop_desc, shop_address,phone, shop_img, priority, create_time, last_edit_time, enable_status, advice) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-2018-05-16 12:31:18.769[main]DEBUG com.heiku.snacks.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 4(Integer), 1(Long), 美味笼仔(String), 蒸饭(String), 正门(String), 1312131241(String), test(String), null, 2018-05-16 12:31:18.105(Timestamp), null, 1(Integer), 审核中(String)
-2018-05-16 12:31:18.852[main]DEBUG com.heiku.snacks.dao.ShopDao.insertShop - <==    Updates: 1
-2018-05-16 14:55:01.505[main]DEBUG com.heiku.snacks.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(manager_id, area_id, shop_category_id, shop_name, shop_desc, shop_address,phone, shop_img, priority, create_time, last_edit_time, enable_status, advice) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-2018-05-16 14:55:01.564[main]DEBUG com.heiku.snacks.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 4(Integer), 1(Long), 美味笼仔(String), 蒸饭(String), 正门(String), 1312131241(String), test(String), null, 2018-05-16 14:55:00.941(Timestamp), null, 1(Integer), 审核中(String)
-2018-05-16 14:55:01.666[main]DEBUG com.heiku.snacks.dao.ShopDao.insertShop - <==    Updates: 1
-2018-05-16 23:06:50.943[main]DEBUG com.heiku.snacks.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name = ?, shop_desc = ?, shop_address = ?, phone = ?, shop_img = ?, enable_status = ?, advice = ? where shop_id = ? 
-2018-05-16 23:06:51.039[main]DEBUG com.heiku.snacks.dao.ShopDao.updateShop - ==> Parameters: 娇姐美食(String), 蒸饭(String), 南门(String), 1312131241(String), test(String), 1(Integer), 审核中(String), 1(Long)
-2018-05-16 23:06:51.210[main]DEBUG com.heiku.snacks.dao.ShopDao.updateShop - <==    Updates: 1
+2018-05-18 17:24:30.348[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id, from tb_shop_category order by priority desc 
+2018-05-18 17:24:30.427[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-05-18 17:26:07.118[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category order by priority desc 
+2018-05-18 17:26:07.165[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-05-18 17:26:07.189[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2018-05-18 17:27:40.330[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category order by priority desc 
+2018-05-18 17:27:40.413[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-05-18 17:27:40.435[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 2
+2018-05-18 17:27:54.002[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category order by priority desc 
+2018-05-18 17:27:54.081[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-05-18 17:27:54.101[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 2
+2018-05-18 17:31:14.223[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category order by priority desc 
+2018-05-18 17:31:14.272[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-05-18 17:31:14.299[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 3
+2018-05-18 17:31:14.309[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category WHERE parent_id = ? order by priority desc 
+2018-05-18 17:31:14.310[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 2(Long)
+2018-05-18 17:31:14.481[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2018-05-18 17:31:52.701[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category order by priority desc 
+2018-05-18 17:31:52.771[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-05-18 17:31:52.798[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 3
+2018-05-18 17:31:52.809[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category WHERE parent_id = ? order by priority desc 
+2018-05-18 17:31:52.809[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 2(Long)
+2018-05-18 17:31:52.811[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2018-05-18 17:52:54.451[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category WHERE parent_id is not null order by priority desc 
+2018-05-18 17:52:54.524[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-05-18 17:52:54.584[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2018-05-18 17:52:54.593[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category WHERE parent_id is not null and parent_id = ? order by priority desc 
+2018-05-18 17:52:54.593[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 2(Long)
+2018-05-18 17:52:54.595[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2018-05-18 17:53:24.633[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category WHERE parent_id is not null order by priority desc 
+2018-05-18 17:53:24.684[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-05-18 17:53:24.714[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2018-05-18 17:53:24.725[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category WHERE parent_id is not null and parent_id = ? order by priority desc 
+2018-05-18 17:53:24.725[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 2(Long)
+2018-05-18 17:53:24.727[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2018-05-18 17:54:11.716[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category WHERE parent_id is not null order by priority desc 
+2018-05-18 17:54:11.782[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-05-18 17:54:11.807[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2018-05-18 17:54:11.817[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category WHERE parent_id is not null and parent_id = ? order by priority desc 
+2018-05-18 17:54:11.818[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 2(Long)
+2018-05-18 17:54:11.819[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2018-05-18 17:54:31.516[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category WHERE parent_id is not null order by priority desc 
+2018-05-18 17:54:31.577[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-05-18 17:54:31.600[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2018-05-18 17:54:39.814[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category WHERE parent_id is not null order by priority desc 
+2018-05-18 17:54:39.862[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-05-18 17:54:39.881[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2018-05-18 17:56:21.422[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id, shop_category_name, shop_category_img, priority, create_time, last_edit_time, parent_id from tb_shop_category WHERE parent_id is not null order by priority desc 
+2018-05-18 17:56:21.478[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-05-18 17:56:21.508[main]DEBUG c.h.snacks.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
