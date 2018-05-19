@@ -20,4 +20,12 @@ public interface ShopDao {
      * @return
      */
     int updateShop(Shop shop);
+
+
+    /**
+     * query shop By ID
+     * @param shopId
+     * @return
+     */
+    Shop queryByShopId(Long shopId);
 }
