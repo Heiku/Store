@@ -22,8 +22,9 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
+
 import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -199,11 +200,11 @@ public class ShopManagementController {
     private Map<String, Object> modifyShop(HttpServletRequest request){
         Map<String, Object> modelMap = new HashMap<>();
 
-        String s = request.getParameter("verifyCodeActual");
-        System.out.println(s);
+        String code = request.getParameter("verifyCodeActual");
+        System.out.println(code);
 
         // 验证码校验
-        if (!CodeUtil.checkVerifyCode(request)){
+        if (!CodeUtil.checkVerifyCode(request)) {
             modelMap.put("success", false);
             modelMap.put("errMsg", "输入了错误的验证码");
             return modelMap;

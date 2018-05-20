@@ -6,8 +6,6 @@ $(function () {
     var shopInfoUrl = '/store/shopadmin/getshopbyid?shopId=' + shopId;
     var editShopUrl= '/store/shopadmin/modifyshop';
 
-    alert(initUrl);
-
     if (!isEdit){
         getShopInitINfo();
     } else {
@@ -36,7 +34,7 @@ $(function () {
         });
     }
 
-    $('#submit').click(function () {
+    $('#submit').click(function() {
         var shop = {};
 
         if (isEdit){
@@ -53,7 +51,7 @@ $(function () {
             }).data('id')
         };
 
-        shop.area= {
+        shop.area = {
             areaId : $('#area').find('option').not(function () {
                 return !this.selected;
             }).data('id')
@@ -61,36 +59,33 @@ $(function () {
 
         var shopImg = $('#shop-img')[0].files[0];
 
-
         var formData = new FormData();
-        formData.append('shopImg', shopImg);
-        formData.append('shopStr', JSON.stringify(shop));
-
-
+        //formData.append('shopImg', shopImg);
+        //formData.append('shopStr', JSON.stringify(shop));
         var verifyCodeActual = $('#j_captcha').val();
         if (!verifyCodeActual) {
             $.toast('请输入验证码！');
             return;
         }
-
-
-        formData.append('verifyCodeActual', verifyCodeActual);
+        formData.append("verifyCodeActual", verifyCodeActual);
 
         $.ajax({
-            url : isEdit ? editShopUrl : registerShopUrl,
+            url : (isEdit ? editShopUrl : registerShopUrl),
             type : 'POST',
             data : formData,
-            contentType : false,
-            processData : false,
-            cache : false,
-            success : function (data) {
-                if (data.succes){
+            contentType: "application/x-www-form-urlencoded",
+            cache: false,
+            processData: false,
+            success : function(data) {
+                if (data.success) {
+                    console.log(data);
                     $.toast('提交成功！');
+                    $('#captcha_img').click();
                 } else {
-                    $.toast('提交失败！' + data.errMsg);
+                    $.toast('提交失败！');
+                    console.log(data);
+                    $('#captcha_img').click();
                 }
-
-                $('#captcha-img').click();
             }
         });
 
