@@ -1,6 +1,7 @@
 package com.heiku.snacks.util;
 
 import com.google.code.kaptcha.Constants;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import javax.servlet.http.HttpServletRequest;
 

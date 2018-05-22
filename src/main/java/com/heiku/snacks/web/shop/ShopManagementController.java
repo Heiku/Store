@@ -15,9 +15,7 @@ import com.heiku.snacks.util.CodeUtil;
 import com.heiku.snacks.util.HttpServletRequestUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
@@ -111,12 +109,12 @@ public class ShopManagementController {
     private Map<String, Object> registerShop(HttpServletRequest request){
         Map<String, Object> modelMap = new HashMap<>();
 
-        // 验证码校验
+        /*// 验证码校验
         if (!CodeUtil.checkVerifyCode(request)){
             modelMap.put("success", false);
             modelMap.put("errMsg", "输入了错误的验证码");
             return modelMap;
-        }
+        }*/
 
 
         /**
@@ -152,8 +150,8 @@ public class ShopManagementController {
 
         /**
          * 注册店铺
-         *
-         */
+         **/
+
         if (shop != null && shopImg != null){
             User user = (User)request.getSession().getAttribute("user");
             shop.setManager(user);
@@ -189,7 +187,6 @@ public class ShopManagementController {
         }
     }
 
-
     /**
      * 修改店铺
      * @param request
@@ -197,23 +194,19 @@ public class ShopManagementController {
      */
     @RequestMapping(value = "/modifyshop", method = RequestMethod.POST)
     @ResponseBody
-    private Map<String, Object> modifyShop(HttpServletRequest request){
+    private Map<String, Object> modifyShop(HttpServletRequest request ){
         Map<String, Object> modelMap = new HashMap<>();
 
-        String code = request.getParameter("verifyCodeActual");
-        System.out.println(code);
-
-        // 验证码校验
+        /*// 验证码校验
         if (!CodeUtil.checkVerifyCode(request)) {
             modelMap.put("success", false);
             modelMap.put("errMsg", "输入了错误的验证码");
             return modelMap;
-        }
+        }*/
 
 
-        /**
-         * 提取请求实体，文件流
-         */
+        //提取请求实体，文件流
+
         String shopStr = HttpServletRequestUtil.getString(request, "shopStr");
         ObjectMapper mapper = new ObjectMapper();
         Shop shop = null;
@@ -237,10 +230,8 @@ public class ShopManagementController {
             shopImg = (CommonsMultipartFile) multipartHttpServletRequest.getFile("shopImg");
         }
 
-        /**
-         * 修改店铺
-         *
-         */
+        //修改店铺
+
         if (shop != null && shop.getShopId() != null){
 
             ShopExecution execution;
@@ -272,5 +263,68 @@ public class ShopManagementController {
     }
 
 
+    /**
+     *  获取指定店主下的所有店铺列表
+     *
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "/getshoplist", method = RequestMethod.GET)
+    @ResponseBody
+    private Map<String, Object> getShopList(HttpServletRequest request){
+        Map<String, Object> modelMap = new HashMap<>();
 
+        User user = new User();
+        user.setUserId(1L);
+        user.setName("heiku");
+        user = (User)request.getSession().getAttribute("user");
+
+
+        try {
+            Shop shopCondition = new Shop();
+            shopCondition.setManager(user);
+
+            ShopExecution se = shopService.getShopList(shopCondition, 0, 100);
+
+            modelMap.put("shopList", se.getShopList());
+            modelMap.put("user", user);
+            modelMap.put("success", true);
+        }catch (Exception e){
+            modelMap.put("success", false);
+            modelMap.put("errMsg", e.getMessage());
+        }
+
+        return modelMap;
+    }
+
+
+    @RequestMapping(value = "/getshopmanagementinfo", method = RequestMethod.GET)
+    @ResponseBody
+    private Map<String, Object> getShopManagementInfo(HttpServletRequest request){
+        Map<String, Object> modelMap = new HashMap<>();
+
+        // 链接判断参数
+        long shopId = HttpServletRequestUtil.getLong(request, "shopId");
+        if (shopId <= 0){
+            Object currentShopObj = request.getSession().getAttribute("currentShop");
+
+            if (currentShopObj == null){
+                modelMap.put("redirect", true);
+                modelMap.put("url", "/store/shop/shoplist");
+            }else {
+                Shop currentShop = (Shop) currentShopObj;
+                modelMap.put("redirect", false);
+                modelMap.put("shopId", currentShop.getShopId());
+            }
+
+        }else {
+            Shop currentShop = new Shop();
+            currentShop.setShopId(shopId);
+            request.getSession().setAttribute("currentShop", currentShop);
+
+            modelMap.put("redirect", false);
+        }
+
+        return modelMap;
+    }
 }

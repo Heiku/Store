@@ -36,4 +36,15 @@ public interface ShopService {
      * @return
      */
     ShopExecution modifyShop(Shop shop, CommonsMultipartFile shopImg) throws ShopOperationException;
+
+
+    /**
+     * 根据店铺属性分页获取店铺列表
+     *
+     * @param shopCondition
+     * @param pageIndex
+     * @param pageSize
+     * @return
+     */
+    ShopExecution getShopList(Shop shopCondition, int pageIndex, int pageSize);
 }

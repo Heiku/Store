@@ -7,6 +7,7 @@ import com.heiku.snacks.enums.ShopStateEnum;
 import com.heiku.snacks.exception.ShopOperationException;
 import com.heiku.snacks.service.ShopService;
 import com.heiku.snacks.util.ImageUtil;
+import com.heiku.snacks.util.PageCalculator;
 import com.heiku.snacks.util.PathUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,6 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import java.util.Date;
+import java.util.List;
 
 
 @Service
@@ -106,5 +108,25 @@ public class ShopServiceImpl implements ShopService {
                 throw new ShopOperationException("modifyShop error: " + e.getMessage());
             }
         }
+    }
+
+
+    @Override
+    public ShopExecution getShopList(Shop shopCondition, int pageIndex, int pageSize) {
+
+        int rowIndex= PageCalculator.calculateRowIndex(pageIndex, pageSize);
+        List<Shop> shopList = shopDao.queryShopList(shopCondition, rowIndex, pageSize);
+
+        int count = shopDao.queryShopCount(shopCondition);
+        ShopExecution se = new ShopExecution();
+
+        if (shopList != null){
+            se.setShopList(shopList);
+            se.setCount(count);
+        }else {
+            se.setState(ShopStateEnum.INNER_ERROR.getState());
+        }
+
+        return se;
     }
 }

@@ -1,5 +1,7 @@
 package com.heiku.snacks.util;
 
+import org.springframework.web.multipart.MultipartHttpServletRequest;
+
 import javax.servlet.http.HttpServletRequest;
 
 public class HttpServletRequestUtil {

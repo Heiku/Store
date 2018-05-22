@@ -60,8 +60,8 @@ $(function () {
         var shopImg = $('#shop-img')[0].files[0];
 
         var formData = new FormData();
-        //formData.append('shopImg', shopImg);
-        //formData.append('shopStr', JSON.stringify(shop));
+        formData.append('shopImg', shopImg);
+        formData.append('shopStr', JSON.stringify(shop));
         var verifyCodeActual = $('#j_captcha').val();
         if (!verifyCodeActual) {
             $.toast('请输入验证码！');
@@ -73,16 +73,15 @@ $(function () {
             url : (isEdit ? editShopUrl : registerShopUrl),
             type : 'POST',
             data : formData,
-            contentType: "application/x-www-form-urlencoded",
+            //contentType: "application/x-www-form-urlencoded",
+            contentType : false,
             cache: false,
             processData: false,
             success : function(data) {
                 if (data.success) {
                     console.log(data);
-                    $.toast('提交成功！');
                     $('#captcha_img').click();
                 } else {
-                    $.toast('提交失败！');
                     console.log(data);
                     $('#captcha_img').click();
                 }
