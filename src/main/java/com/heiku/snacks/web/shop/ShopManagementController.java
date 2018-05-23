@@ -277,7 +277,7 @@ public class ShopManagementController {
         User user = new User();
         user.setUserId(1L);
         user.setName("heiku");
-        user = (User)request.getSession().getAttribute("user");
+        //user = (User)request.getSession().getAttribute("user");
 
 
         try {
@@ -286,7 +286,7 @@ public class ShopManagementController {
 
             ShopExecution se = shopService.getShopList(shopCondition, 0, 100);
 
-            modelMap.put("shopList", se.getShopList());
+            modelMap.put("shoplist", se.getShopList());
             modelMap.put("user", user);
             modelMap.put("success", true);
         }catch (Exception e){
@@ -305,12 +305,15 @@ public class ShopManagementController {
 
         // 链接判断参数
         long shopId = HttpServletRequestUtil.getLong(request, "shopId");
+        System.out.println(shopId);
+
         if (shopId <= 0){
             Object currentShopObj = request.getSession().getAttribute("currentShop");
 
+            // 无法从链接和session中找到指定shop，重定向到shoplist选择
             if (currentShopObj == null){
                 modelMap.put("redirect", true);
-                modelMap.put("url", "/store/shop/shoplist");
+                modelMap.put("url", "/store/shopadmin/shopList");
             }else {
                 Shop currentShop = (Shop) currentShopObj;
                 modelMap.put("redirect", false);
