@@ -10,7 +10,7 @@ public class Product {
     private String normalPrice;
     private String promotionPrice;
 
-    private Integer priorty;
+    private Integer priority;
     private String imgAddr;
     private Date createTime;
     private Date lastEditTime;
@@ -64,12 +64,12 @@ public class Product {
         this.promotionPrice = promotionPrice;
     }
 
-    public Integer getPriorty() {
-        return priorty;
+    public Integer getPriority() {
+        return priority;
     }
 
-    public void setPriorty(Integer priorty) {
-        this.priorty = priorty;
+    public void setPriority(Integer priority) {
+        this.priority = priority;
     }
 
     public String getImgAddr() {
