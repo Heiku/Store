@@ -44,6 +44,34 @@ public class ImageUtil {
 
 
     /**
+     * 商品图片的微处理
+     *
+     * @param thumbnail
+     * @param targetAddr
+     * @return
+     */
+    public static String generateNormalImg(CommonsMultipartFile thumbnail, String targetAddr){
+        String realFileName = getRandomFileName();
+        String extension = getFileExtension(thumbnail);
+
+        makeDirPath(targetAddr);
+
+        String relativeAddr = targetAddr + realFileName + extension;
+        File dest = new File(PathUtil.getImgBasePath() + relativeAddr);
+        try {
+            Thumbnails.of(thumbnail.getInputStream())
+                    .size(337, 640)
+                    .outputQuality(0.f)
+                    .toFile(dest);
+        }catch (IOException e){
+            throw new RuntimeException("创建缩略图失败: " + e.getMessage());
+        }
+
+        return relativeAddr;
+    }
+
+
+    /**
      * random filename
      * @return
      */
