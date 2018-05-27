@@ -46,6 +46,14 @@ public class ProductManagementController {
     private Map<String, Object> addProduct(HttpServletRequest request){
         Map<String, Object> modelMap = new HashMap<>();
 
+
+        MultipartHttpServletRequest request2 = null;
+        if (request instanceof MultipartHttpServletRequest){
+            request2 = (MultipartHttpServletRequest)request;
+        }
+        System.out.println(request2.getParameter("verifyCodeActual"));
+
+
         if (!CodeUtil.checkVerifyCode(request)){
             modelMap.put("success", false);
             modelMap.put("errMsg", "验证码错误！");

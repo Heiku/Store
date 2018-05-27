@@ -48,6 +48,11 @@ public interface ProductDao {
     int deleteProduct(@Param("productId")long productId, @Param("shopId")long shopId);
 
 
-
-    int queryProductCount();
+    /**
+     * 通过id查询商品信息
+     *
+     * @param productId
+     * @return
+     */
+    Product queryProductById(long productId);
 }

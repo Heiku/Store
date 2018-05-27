@@ -2,6 +2,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.heiku.snacks.dao.ProductImgDao">
+
     <insert id="batchInsertProductImg" parameterType="java.util.List">
         insert into 
           tb_product_img(
@@ -18,4 +19,11 @@
               )
           </foreach>
     </insert>
+
+    <delete id="deleteProductImgByProductId">
+        delete from
+          tb_product_img
+        where
+          product_id = #{productId}
+    </delete>
 </mapper>

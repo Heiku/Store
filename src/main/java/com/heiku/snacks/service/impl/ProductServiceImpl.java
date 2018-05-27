@@ -29,7 +29,6 @@ public class ProductServiceImpl implements ProductService {
     private ProductImgDao productImgDao;
 
     @Override
-    @Transactional
     public ProductExecution addProduct(Product product, CommonsMultipartFile thumbnail, List<CommonsMultipartFile> productImgs) throws ProductOperationException {
         if (product != null && product.getShop() != null && product.getShop().getShopId() != null){
             product.setCreateTime(new Date());
