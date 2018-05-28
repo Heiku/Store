@@ -102,4 +102,79 @@ public class ProductServiceImpl implements ProductService {
             }
         }
     }
+
+
+    /**
+     * 查询商品
+     *
+     * @param productId
+     * @return
+     */
+    @Override
+    public Product getProductById(long productId) {
+        return productDao.queryProductById(productId);
+    }
+
+
+    /**
+     * 修改商品信息
+     *
+     * @param product
+     * @param thumbnail
+     * @param productImgs
+     * @return
+     * @throws ProductOperationException
+     */
+    @Override
+    public ProductExecution modifyProduct(Product product, CommonsMultipartFile thumbnail,
+                                          List<CommonsMultipartFile> productImgs) throws ProductOperationException {
+
+        // 判断product实体对象
+        if (product != null && product.getShop() != null && product.getShop().getShopId() != null) {
+            product.setLastEditTime(new Date());
+
+            // 删除旧缩略图
+            if (thumbnail != null) {
+
+                // 获取旧实体类,删除旧图
+                Product old = productDao.queryProductById(product.getProductId());
+                if (old.getImgAddr() != null) {
+                    ImageUtil.deleteFileOrPath(old.getImgAddr());
+                }
+                addThumbail(product, thumbnail);
+            }
+
+            // 删除旧缩略图，插入新图
+            if (productImgs != null && productImgs.size() > 0) {
+                deleteProductImgList(product.getProductId());
+                addProductImgList(product, productImgs);
+            }
+
+            try {
+                int effectNum = productDao.updateProduct(product);
+                if (effectNum <= 0)
+                    throw new ProductOperationException("更新商品失败！");
+
+                return new ProductExecution(ProductStateEnum.SUCCESS, product);
+            } catch (Exception e) {
+                throw new ProductOperationException("更新商品失败：" + e.getMessage());
+            }
+        } else {
+            return new ProductExecution(ProductStateEnum.EMPTY);
+        }
+    }
+
+
+    // 删除旧详情图（文件，数据库）
+    private void deleteProductImgList(Long productId){
+        List<ProductImg> productImgList = productImgDao.queryProductImgList(productId);
+
+        // 文件删除
+        for (ProductImg productImg : productImgList){
+            ImageUtil.deleteFileOrPath(productImg.getImgAddr());
+        }
+
+        // 数据库删除
+        productImgDao.deleteProductImgByProductId(productId);
+    }
 }

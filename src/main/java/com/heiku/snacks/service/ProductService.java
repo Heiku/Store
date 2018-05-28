@@ -17,4 +17,26 @@ public interface ProductService {
      */
     ProductExecution addProduct(Product product, CommonsMultipartFile thumbnail,
                                 List<CommonsMultipartFile> productImgs) throws ProductOperationException;
+
+
+    /**
+     * 查询商品通过Id
+     *
+     * @param productId
+     * @return
+     */
+    Product getProductById(long productId);
+
+
+    /**
+     * 修改商品并处理图片
+     *
+     * @param product
+     * @param thumbnail
+     * @param productImgs
+     * @return
+     * @throws ProductOperationException
+     */
+    ProductExecution modifyProduct(Product product, CommonsMultipartFile thumbnail,
+                                   List<CommonsMultipartFile> productImgs) throws ProductOperationException;
 }

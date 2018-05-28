@@ -3,17 +3,16 @@ package com.heiku.snacks.web.shop;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.heiku.snacks.dto.ProductExecution;
 import com.heiku.snacks.entity.Product;
+import com.heiku.snacks.entity.ProductCategory;
 import com.heiku.snacks.entity.Shop;
 import com.heiku.snacks.enums.ProductStateEnum;
+import com.heiku.snacks.service.ProductCategoryService;
 import com.heiku.snacks.service.ProductService;
 import com.heiku.snacks.util.CodeUtil;
 import com.heiku.snacks.util.HttpServletRequestUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
@@ -30,6 +29,9 @@ public class ProductManagementController {
 
     @Autowired
     private ProductService productService;
+
+    @Autowired
+    private ProductCategoryService productCategoryService;
 
     // 最大上传图片数量
     private static final int MAXIMAGECOUNT = 6;
@@ -142,4 +144,118 @@ public class ProductManagementController {
 
         return modelMap;
     }
+
+
+    /**
+     * 获取指定id的商品信息
+     *
+     * @param productId
+     * @return
+     */
+    @RequestMapping(value = "getproductbyid", method = RequestMethod.GET)
+    @ResponseBody
+    private Map<String, Object> getProductById(@RequestParam Long productId){
+        Map<String, Object> modelMap = new HashMap<>();
+
+        if (productId > -1){
+            Product product = productService.getProductById(productId);
+
+            List<ProductCategory> productCategoryList =
+                    productCategoryService.getProductCategory(product.getShop().getShopId());
+
+            modelMap.put("success", true);
+            modelMap.put("product", product);
+            modelMap.put("productCategoryList", productCategoryList);
+        }else {
+            modelMap.put("success", false);
+            modelMap.put("errMsg", "请输入productId");
+        }
+        return modelMap;
+    }
+
+
+
+    @RequestMapping(value = "/modifyproduct", method = RequestMethod.POST)
+    @ResponseBody
+    private Map<String, Object> modifyProdcut(HttpServletRequest request){
+        Map<String, Object> modelMap = new HashMap<>();
+
+        boolean statusChange = HttpServletRequestUtil.getBoolean(request, "statusChange");
+
+        // 判断是否是验证码修改
+        if (!statusChange && !CodeUtil.checkVerifyCode(request)){
+            modelMap.put("success", false);
+            modelMap.put("errMsg", "验证码输入错误");
+            return modelMap;
+        }
+
+        // 获取实体类
+        ObjectMapper mapper = new ObjectMapper();
+        Product product = null;
+
+        // 缩略图
+        CommonsMultipartFile thumbnail = null;
+
+        // 获取详情图
+        List<CommonsMultipartFile> productImgList = new ArrayList<>();
+        CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(
+                request.getSession().getServletContext());
+
+        try {
+            if (multipartResolver.isMultipart(request)){
+                MultipartHttpServletRequest multipartHttpServletRequest = (MultipartHttpServletRequest) request;
+
+                // 提取缩略图
+                thumbnail = (CommonsMultipartFile) multipartHttpServletRequest.getFile("thumbnail");
+
+                // 提取详情图
+                for (int i = 0; i < MAXIMAGECOUNT; i++){
+                    CommonsMultipartFile productImgItem =
+                            (CommonsMultipartFile) multipartHttpServletRequest.getFile("productImg" + i);
+
+                    if (productImgItem != null){
+                        productImgList.add(productImgItem);
+                    }
+                }
+            }
+        }catch (Exception e){
+            modelMap.put("success", false);
+            modelMap.put("errMsg", e.getMessage());
+        }
+
+        // 获取product对象
+        String productStr = HttpServletRequestUtil.getString(request, "productStr");
+        try {
+            product = mapper.readValue(productStr, Product.class);
+        }catch (Exception e){
+            modelMap.put("success", false);
+            modelMap.put("errMsg", e.getMessage());
+        }
+
+        if (product != null){
+            try {
+                Shop currentShop = (Shop) request.getSession().getAttribute("currentShop");
+                Shop shop = new Shop();
+                shop.setShopId(currentShop.getShopId());
+                product.setShop(shop);
+
+                ProductExecution execution = productService.modifyProduct(product, thumbnail, productImgList);
+
+                if (execution.getState() == ProductStateEnum.SUCCESS.getState()){
+                    modelMap.put("success", true);
+                }else {
+                    modelMap.put("success", false);
+                    modelMap.put("errMsg", execution.getStateInfo());
+                }
+            }catch (Exception e){
+                modelMap.put("success", false);
+                modelMap.put("errMsg", e.getMessage());
+            }
+        }else {
+            modelMap.put("success", false);
+            modelMap.put("errMsg", "请输入商品信息");
+        }
+        return modelMap;
+    }
+
 }

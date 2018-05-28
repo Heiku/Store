@@ -42,4 +42,18 @@ public class ProductDaoTest extends BaseTest {
         int effectNum = productDao.insertProduct(product);
         assertEquals(1, effectNum);
     }
+
+    @Test
+    public void testQueryProductById(){
+        Long productId = 4L;
+        Product product = productDao.queryProductById(productId);
+
+        System.out.println(product.getProductName());
+        System.out.println(product.getShop().getShopId());
+        System.out.println(product.getProductCategory().getProductCategoryName());
+
+        List<ProductImg> productImgs = product.getProductImgList();
+        assertEquals(2, productImgs.size());
+
+    }
 }

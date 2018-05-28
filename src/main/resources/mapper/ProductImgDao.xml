@@ -26,4 +26,21 @@
         where
           product_id = #{productId}
     </delete>
+
+
+    <select id="queryProductImgList" resultType="com.heiku.snacks.entity.ProductImg">
+        select
+          img_id,
+          img_addr,
+          img_desc,
+          priority,
+          create_time,
+          product_id
+        from
+          tb_product_img
+        where
+          product_id = #{productId}
+        order by
+          img_id asc
+    </select>
 </mapper>

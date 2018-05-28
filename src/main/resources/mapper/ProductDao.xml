@@ -2,43 +2,40 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.heiku.snacks.dao.ProductDao">
-    
-    <!--<resultMap id="productMap" type="com.heiku.snacks.entity.Product">
+
+    <resultMap id="productMap" type="com.heiku.snacks.entity.Product">
         <id column="product_id" property="productId"/>
         <result column="product_name" property="productName"/>
         <result column="product_desc" property="productDesc"/>
         <result column="normal_price" property="normalPrice"/>
         <result column="promotion_price" property="promotionPrice"/>
-        <result column="priority" property="priority"/>
         <result column="img_addr" property="imgAddr"/>
+        <result column="priority" property="priority"/>
         <result column="create_time" property="createTime"/>
         <result column="last_edit_time" property="lastEditTime"/>
         <result column="enable_status" property="enableStatus"/>
 
-        &lt;!&ndash; shop &ndash;&gt;
-        <association column="shop_id" property="shop" javaType="com.heiku.snacks.entity.Shop">
-            <id column="shop_id" property="shopId"/>
-            <result column="shop_name" property="shopName"/>
-            <result column="manager_id" property="manager"/>
-        </association>
-
-        &lt;!&ndash; productCategory &ndash;&gt;
-        <association column="product_category_id" property="productCategory" javaType="com.heiku.snacks.entity.ProductCategory">
+        <association column="product_category_id" property="productCategory"
+                     javaType="com.heiku.snacks.entity.ProductCategory">
             <id column="product_category_id" property="productCategoryId"/>
             <result column="product_category_name" property="productCategoryName"/>
         </association>
+        
+        <association column="shop_id" property="shop" javaType="com.heiku.snacks.entity.Shop">
+            <id column="shop_id" property="shopId"/>
+            <result column="shop_name" property="shopName"/>
+        </association>
 
-        &lt;!&ndash; productImgList &ndash;&gt;
-        <collection column="product_img_id" property="productImgList" ofType="com.heiku.snacks.entity.ProductImg">
-            <id column="product_img_id" property="productImgId"/>
+        <collection column="product_id" property="productImgList" ofType="com.heiku.snacks.entity.ProductImg">
+            <id column="img_id" property="imgId"/>
             <result column="img_addr" property="imgAddr"/>
             <result column="img_desc" property="imgDesc"/>
             <result column="priority" property="priority"/>
             <result column="create_time" property="createTime"/>
             <result column="product_id" property="productId"/>
         </collection>
-    </resultMap>-->
-    
+    </resultMap>
+
     <insert id="insertProduct" parameterType="com.heiku.snacks.entity.Product"
             keyProperty="productId" keyColumn="product_id" useGeneratedKeys="true">
         insert into
@@ -54,22 +51,23 @@
           )
     </insert>
 
-    <!--<select id="queryProductById" resultMap="productMap" parameterType="Long">
+
+    <select id="queryProductById" resultMap="productMap" parameterType="Long">
         select
           p.product_id,
           p.product_name,
           p.product_desc,
           p.normal_price,
           p.promotion_price,
-          p.priority,
           p.img_addr,
+          p.priority,
           p.create_time,
           p.last_edit_time,
           p.enable_status,
           p.product_category_id,
           p.shop_id,
-          pi.product_img_id,
-          pi.img_addr as detail_img,
+          pi.img_id,
+          pi.img_addr,
           pi.img_desc,
           pi.priority,
           pi.create_time
@@ -83,25 +81,26 @@
           pi.priority desc
     </select>
 
-
-    <update id="updateProduct" parameterType="com.heiku.snacks.entity.Product" keyProperty="productId"
-            useGeneratedKeys="true">
-        update
-          tb_product
+    <update id="updateProduct" parameterType="com.heiku.snacks.entity.Product"
+            keyProperty="productId" useGeneratedKeys="true">
+        update tb_product
         <set>
-            <if test="productName != null">product_name = #{productName},</if>
-            <if test="productDesc != null">product_desc = #{productDesc},</if>
-            <if test="imgAddr != null">img_addr = #{imgAddr},</if>
-            <if test="normalPrice != null">normal_price = #{normalPrice},</if>
-            <if test="promotionPrice != null">promotion_price = #{promotionPrice},</if>
-            <if test="priority != null">priority = #{priority},</if>
-            <if test="lastEditTime != null">last_edit_time = #{lastEditTIme},</if>
-            <if test="enableStatus != null">enable_status = #{enableStatus},</if>
+            <if test="productName != null">product_name=#{productName},</if>
+            <if test="productDesc != null">product_desc=#{productDesc},</if>
+            <if test="imgAddr != null">img_addr=#{imgAddr},</if>
+            <if test="normalPrice != null">normal_price=#{normalPrice},</if>
+            <if test="promotionPrice != null">promotion_price=#{promotionPrice},</if>
+            <if test="priority != null">priority=#{priority},</if>
+            <if test="lastEditTime != null">last_edit_time=#{lastEditTime},</if>
+            <if test="enableStatus != null">enable_status=#{enableStatus},</if>
             <if test="productCategory != null and productCategory.productCategoryId != null">
-                product_category_id = #{productCategory.productCategoryId}
+                product_category_id=#{productCategory.productCategoryId}
             </if>
         </set>
-        where
-          product_id = #{productId} and shop_id = #{shop.shopId}
-    </update>-->
+        WHERE
+          product_id = #{productId}
+        AND
+          shop_id=#{shop.shopId}
+    </update>
+
 </mapper>

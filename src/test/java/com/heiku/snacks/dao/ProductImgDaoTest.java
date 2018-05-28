@@ -56,4 +56,12 @@ public class ProductImgDaoTest extends BaseTest {
         int effectNum = productImgDao.deleteProductImgByProductId(productId);
         assertEquals(3, effectNum);
     }
+
+
+    @Test
+    public void testQueryProductImgList(){
+        Long productId = 4L;
+        List<ProductImg> productImgList = productImgDao.queryProductImgList(productId);
+        assertEquals(2, productImgList.size());
+    }
 }
