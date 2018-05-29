@@ -234,11 +234,11 @@ public class ProductManagementController {
 
         if (product != null){
             try {
+                // 获取商铺
                 Shop currentShop = (Shop) request.getSession().getAttribute("currentShop");
-                Shop shop = new Shop();
-                shop.setShopId(currentShop.getShopId());
-                product.setShop(shop);
+                product.setShop(currentShop);
 
+                // 执行修改商品
                 ProductExecution execution = productService.modifyProduct(product, thumbnail, productImgList);
 
                 if (execution.getState() == ProductStateEnum.SUCCESS.getState()){
