@@ -8,8 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a20eb3a8-2d5b-4ee0-b7c7-46a5e1188b3f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ProductManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ProductManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/ShopCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/ShopCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/heiku/snacks/dao/ShopCategoryDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/heiku/snacks/dao/ShopCategoryDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/heiku/snacks/web/shop/ShopAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heiku/snacks/web/shop/ShopAdminController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductManagementController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ProductManagementController.java">
+      <file leaf-file-name="HeadLineDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/dao/HeadLineDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="243" selection-start-line="243" selection-end-line="243" />
+            <state relative-caret-position="399">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,29 +37,89 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/util/CodeUtil.java">
+      <file leaf-file-name="HeadLineDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/heiku/snacks/dao/HeadLineDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShopCategoryDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShopCategoryDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/heiku/snacks/dao/ShopCategoryDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeadLineService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/HeadLineService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeadLineServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/impl/HeadLineServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShopCategoryService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/ShopCategoryService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShopAdminController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopAdminController.java">
+      <file leaf-file-name="ShopCategoryServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/impl/ShopCategoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="247">
+              <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/impl/ProductServiceImpl.java">
+      <file leaf-file-name="MainPageController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/frontend/MainPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="136" column="36" lean-forward="true" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
+            <state relative-caret-position="424">
+              <caret line="53" column="43" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeadLineDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/HeadLineDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -70,8 +133,8 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -100,7 +163,11 @@
       <replace>store</replace>
       <replace>/store/shopadmin</replace>
       <replace>com.heiku.snacks.</replace>
+      <replace />
     </replaceStrings>
+    <dirStrings>
+      <dir>E:\Java\projects\SISE\Spring\store\src\main\java\com\heiku\snacks\dao</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,15 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/heiku/snacks/dao/ShopDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/ShopService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/util/PageCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/impl/ShopServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/heiku/snacks/service/impl/ShopServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopManage.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopList.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopManagement.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopManagementController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopManage.js" />
@@ -159,6 +217,15 @@
         <option value="$PROJECT_DIR$/src/test/java/com/heiku/snacks/service/impl/ProductServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ProductManagementController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopAdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/dao/HeadLineDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/HeadLineDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/heiku/snacks/dao/HeadLineDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/heiku/snacks/dao/ShopCategoryDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/impl/HeadLineServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/HeadLineService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/ShopCategoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/frontend/MainPageController.java" />
       </list>
     </option>
   </component>
@@ -190,10 +257,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="419" />
-    <option name="width" value="1119" />
-    <option name="height" value="832" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="702" />
+    <option name="width" value="1220" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -204,7 +271,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,7 +311,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="snacks" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="snacks" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="store" type="b2602c69:ProjectViewProjectNode" />
@@ -255,7 +330,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="snacks" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="store" type="b2602c69:ProjectViewProjectNode" />
@@ -271,16 +345,6 @@
               <item name="store" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="snacks" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -288,61 +352,8 @@
               <item name="store" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="store" type="b2602c69:ProjectViewProjectNode" />
@@ -350,10 +361,35 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="snacks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="snacks" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -372,19 +408,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.heiku.snacks.service.impl" />
       <recent name="com.heiku.snacks.dao" />
+      <recent name="com.heiku.snacks.service.impl" />
       <recent name="com.heiku.snacks.service" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\resources\css\shop" />
-      <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\resources\js\shop" />
-      <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\WEB-INF\html\shop" />
-      <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\resources\css" />
-      <recent name="E:\Java\projects\SISE\Spring\store\src\main\resources" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\resources\css\shop" />
@@ -392,6 +418,16 @@
       <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp" />
       <recent name="E:\Java\projects\SISE\Spring\store\src\main\resources" />
       <recent name="E:\Java\projects\SISE\Spring\store\src\main\resources\spring" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\resources\css\shop" />
+      <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\resources\js\shop" />
+      <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\WEB-INF\html\shop" />
+      <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\resources\css" />
+      <recent name="E:\Java\projects\SISE\Spring\store\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -433,7 +469,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ProductDaoTest.testInsertProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HeadLineDaoTest.queryHeadLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="store" />
       <extension name="coverage">
         <pattern>
@@ -444,8 +480,31 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.heiku.snacks.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.heiku.snacks.dao.ProductDaoTest" />
-      <option name="METHOD_NAME" value="testInsertProduct" />
+      <option name="MAIN_CLASS_NAME" value="com.heiku.snacks.dao.HeadLineDaoTest" />
+      <option name="METHOD_NAME" value="queryHeadLine" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="HeadLineDaoTest.testInsertHeadLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.heiku.snacks.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.heiku.snacks.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.heiku.snacks.dao.HeadLineDaoTest" />
+      <option name="METHOD_NAME" value="testInsertHeadLine" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -479,52 +538,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ProductImgDaoTest.testBatchInsertProductImg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="store" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.heiku.snacks.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.heiku.snacks.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.heiku.snacks.dao.ProductImgDaoTest" />
-      <option name="METHOD_NAME" value="testBatchInsertProductImg" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ProductImgDaoTest.testDeleteProductImg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="store" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.heiku.snacks.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.heiku.snacks.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.heiku.snacks.dao.ProductImgDaoTest" />
-      <option name="METHOD_NAME" value="testDeleteProductImg" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration name="ProductImgDaoTest.testQueryProductImgList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="store" />
       <extension name="coverage">
@@ -538,6 +551,29 @@
       <option name="PACKAGE_NAME" value="com.heiku.snacks.dao" />
       <option name="MAIN_CLASS_NAME" value="com.heiku.snacks.dao.ProductImgDaoTest" />
       <option name="METHOD_NAME" value="testQueryProductImgList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ShopCategoryDaoTest.queryShopCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.heiku.snacks.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.heiku.snacks.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.heiku.snacks.dao.ShopCategoryDaoTest" />
+      <option name="METHOD_NAME" value="queryShopCategory" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -659,19 +695,19 @@
     <list>
       <item itemvalue="JUnit.AreaDaoTest.testQueryArea" />
       <item itemvalue="Tomcat Server.store" />
-      <item itemvalue="JUnit.ProductImgDaoTest.testBatchInsertProductImg" />
-      <item itemvalue="JUnit.ProductDaoTest.testInsertProduct" />
-      <item itemvalue="JUnit.ProductImgDaoTest.testDeleteProductImg" />
       <item itemvalue="JUnit.ProductDaoTest.testQueryProductById" />
       <item itemvalue="JUnit.ProductImgDaoTest.testQueryProductImgList" />
+      <item itemvalue="JUnit.HeadLineDaoTest.testInsertHeadLine" />
+      <item itemvalue="JUnit.HeadLineDaoTest.queryHeadLine" />
+      <item itemvalue="JUnit.ShopCategoryDaoTest.queryShopCategory" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShopCategoryDaoTest.queryShopCategory" />
+        <item itemvalue="JUnit.HeadLineDaoTest.queryHeadLine" />
+        <item itemvalue="JUnit.HeadLineDaoTest.testInsertHeadLine" />
         <item itemvalue="JUnit.ProductImgDaoTest.testQueryProductImgList" />
         <item itemvalue="JUnit.ProductDaoTest.testQueryProductById" />
-        <item itemvalue="JUnit.ProductDaoTest.testInsertProduct" />
-        <item itemvalue="JUnit.ProductImgDaoTest.testDeleteProductImg" />
-        <item itemvalue="JUnit.ProductImgDaoTest.testBatchInsertProductImg" />
       </list>
     </recent_temporary>
   </component>
@@ -718,31 +754,13 @@
       <workItem from="1527493818140" duration="14894000" />
       <workItem from="1527514588071" duration="1015000" />
       <workItem from="1527580978931" duration="2697000" />
+      <workItem from="1527608868948" duration="73000" />
+      <workItem from="1527661827902" duration="3763000" />
+      <workItem from="1527687297146" duration="2218000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductDaoTest_testQueryProductById - 2018.05.28 at 17h 06m 14s.xml">
-      <configuration name="ProductDaoTest.testQueryProductById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductDaoTest_testQueryProductById - 2018.05.28 at 17h 06m 58s.xml">
-      <configuration name="ProductDaoTest.testQueryProductById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductDaoTest_testQueryProductById - 2018.05.28 at 17h 14m 42s.xml">
-      <configuration name="ProductDaoTest.testQueryProductById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductDaoTest_testQueryProductById - 2018.05.28 at 17h 16m 23s.xml">
-      <configuration name="ProductDaoTest.testQueryProductById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductDaoTest_testInsertProduct - 2018.05.28 at 17h 17m 17s.xml">
-      <configuration name="ProductDaoTest.testInsertProduct" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductDaoTest_testQueryProductById - 2018.05.28 at 17h 17m 29s.xml">
-      <configuration name="ProductDaoTest.testQueryProductById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductDaoTest_testQueryProductById - 2018.05.28 at 17h 20m 01s.xml">
-      <configuration name="ProductDaoTest.testQueryProductById" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProductDaoTest_testQueryProductById - 2018.05.28 at 17h 21m 43s.xml">
       <configuration name="ProductDaoTest.testQueryProductById" configurationId="JUnit" />
     </history-entry>
@@ -752,12 +770,33 @@
     <history-entry file="ProductImgDaoTest_testQueryProductImgList - 2018.05.28 at 19h 42m 42s.xml">
       <configuration name="ProductImgDaoTest.testQueryProductImgList" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HeadLineDaoTest_testInsertHeadLine - 2018.05.30 at 15h 03m 06s.xml">
+      <configuration name="HeadLineDaoTest.testInsertHeadLine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeadLineDaoTest_testInsertHeadLine - 2018.05.30 at 15h 04m 06s.xml">
+      <configuration name="HeadLineDaoTest.testInsertHeadLine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeadLineDaoTest_testInsertHeadLine - 2018.05.30 at 15h 04m 44s.xml">
+      <configuration name="HeadLineDaoTest.testInsertHeadLine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeadLineDaoTest_testInsertHeadLine - 2018.05.30 at 15h 05m 08s.xml">
+      <configuration name="HeadLineDaoTest.testInsertHeadLine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeadLineDaoTest_testInsertHeadLine - 2018.05.30 at 15h 05m 30s.xml">
+      <configuration name="HeadLineDaoTest.testInsertHeadLine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeadLineDaoTest_queryHeadLine - 2018.05.30 at 15h 06m 51s.xml">
+      <configuration name="HeadLineDaoTest.queryHeadLine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopCategoryDaoTest_queryShopCategory - 2018.05.30 at 21h 49m 09s.xml">
+      <configuration name="ShopCategoryDaoTest.queryShopCategory" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227744000" />
+    <option name="totallyTimeSpent" value="233798000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="562" y="0" width="976" height="664" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -779,10 +818,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49948823" weight="0.43593314" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49948823" weight="0.43636364" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4116829" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2524887" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4110345" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2889813" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -848,97 +887,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopManagement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="28" column="67" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productCategoryManage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/productCategoryManage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="59" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/dto/ShopExecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/exception/ShopOperationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/exception/ProductOperationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/enums/ProductStateEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/dto/ProductExecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/productManage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productManage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="54" column="68" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../jdk1.8.0_77/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/dto/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ProductCategoryManagementController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -1021,13 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductCategoryDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/heiku/snacks/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1067,13 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="22" column="24" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="115" column="31" lean-forward="true" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1170,8 +1104,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/impl/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="136" column="36" lean-forward="true" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
+        <state relative-caret-position="2223">
+          <caret line="136" column="36" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1191,7 +1125,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ProductManagementController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="4218">
           <caret line="243" selection-start-line="243" selection-end-line="243" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1201,8 +1135,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopAdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="551">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AreaDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1686">
+          <caret line="115" column="31" lean-forward="true" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/entity/HeadLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/HeadLineDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/dao/HeadLineDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductCategoryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/heiku/snacks/dao/HeadLineDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/heiku/snacks/dao/ShopCategoryDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/impl/HeadLineServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/HeadLineService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/ShopCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/impl/ShopCategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/frontend/MainPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="53" column="43" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
