@@ -1,0 +1,39 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.heiku.snacks.dao.HeadLineDao">
+    <select id="queryHeadLine" resultType="com.heiku.snacks.entity.HeadLine">
+        select
+          line_id,
+          line_name,
+          line_link,
+          line_img,
+          priority,
+          enable_status,
+          create_time,
+          last_edit_time
+        from
+          tb_head_line
+        <where>
+            <if test="headLineCondition.enableStatus != null">
+                and enable_status = #{headLineCondition.enableStatus}
+            </if>
+        </where>
+        order by
+          priority
+        desc
+    </select>
+
+    <insert id="insertHeadLine" useGeneratedKeys="true" keyProperty="lineId" keyColumn="line_id">
+        insert into
+          tb_head_line
+        (
+            line_name,line_link,line_img,priority,enable_status,create_time,last_edit_time
+        )
+        values
+        (
+            #{lineName}, #{lineLink}, #{lineImg},#{priority}, #{enableStatus},
+            #{createTime},#{lastEditTime}
+        )
+    </insert>
+</mapper>
