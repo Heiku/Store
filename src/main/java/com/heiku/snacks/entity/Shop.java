@@ -96,6 +96,7 @@ public class Shop {
         this.lastEditTime = lastEditTime;
     }
 
+
     public Integer getEnableStatus() {
         return enableStatus;
     }

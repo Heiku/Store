@@ -9,6 +9,7 @@ import com.heiku.snacks.enums.ProductStateEnum;
 import com.heiku.snacks.exception.ProductOperationException;
 import com.heiku.snacks.service.ProductService;
 import com.heiku.snacks.util.ImageUtil;
+import com.heiku.snacks.util.PageCalculator;
 import com.heiku.snacks.util.PathUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -164,6 +165,22 @@ public class ProductServiceImpl implements ProductService {
         }
     }
 
+
+    @Override
+    public ProductExecution getProductList(Product product, int pageIndex, int pageSize) {
+
+        // 重新计算行数
+        int rowIndex = PageCalculator.calculateRowIndex(pageIndex, pageSize);
+
+        List<Product> productList = productDao.queryProductList(product, rowIndex, pageSize);
+        int count = productDao.queryProductCount(product);
+
+        ProductExecution execution = new ProductExecution();
+        execution.setProductList(productList);
+        execution.setCount(count);
+
+        return execution;
+    }
 
     // 删除旧详情图（文件，数据库）
     private void deleteProductImgList(Long productId){

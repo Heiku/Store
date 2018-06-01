@@ -55,4 +55,13 @@ public interface ProductDao {
      * @return
      */
     Product queryProductById(long productId);
+
+
+    /**
+     * 查询指定商品属性的总数
+     *
+     * @param productCondition
+     * @return
+     */
+    int queryProductCount(@Param("productCondition") Product productCondition);
 }

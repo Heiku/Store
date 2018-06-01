@@ -14,18 +14,28 @@ public class FrontendController {
     }
 
 
-    @RequestMapping(value = "myrecord", method = RequestMethod.GET)
+    @RequestMapping(value = "/myrecord", method = RequestMethod.GET)
     private String myRecord(){
         return "frontend/myRecord";
     }
 
-    @RequestMapping(value = "mypoint", method = RequestMethod.GET)
+    @RequestMapping(value = "/mypoint", method = RequestMethod.GET)
     private String myPoint(){
         return "frontend/myPoint";
     }
 
-    @RequestMapping(value = "pointRecord", method = RequestMethod.GET)
+    @RequestMapping(value = "/pointRecord", method = RequestMethod.GET)
     private String pointRecord(){
         return "frontend/pointRecord";
+    }
+
+    @RequestMapping(value = "/shoplist", method = RequestMethod.GET)
+    private String shopList(){
+        return "frontend/shopList";
+    }
+
+    @RequestMapping(value = "/shopdetail", method = RequestMethod.GET)
+    private String shopDetail(){
+        return "frontend/shopDetail";
     }
 }

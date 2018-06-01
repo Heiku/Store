@@ -2,6 +2,7 @@ package com.heiku.snacks.util;
 
 public class PathUtil {
 
+    // 获取系统文件分隔符
     private static String seperator = System.getProperty("file.separator");
 
 
@@ -14,9 +15,9 @@ public class PathUtil {
         String basePath = "";
 
         if (os.toLowerCase().startsWith("win")){
-            basePath = "D:/projectdev/image/";
+            basePath = "D:/projectdev/image";
         }else {
-            basePath = "/home/heiku/image/";
+            basePath = "/home/heiku/image";
         }
 
         basePath = basePath.replace("/", seperator);
@@ -30,7 +31,7 @@ public class PathUtil {
      * @return
      */
     public static String getShopImagePath(long shopId){
-        String imagePath = "upload/item/shop/" + shopId + "/";
+        String imagePath = "/upload/item/shop/" + shopId + "/";
         return imagePath.replace("/", seperator);
     }
 }

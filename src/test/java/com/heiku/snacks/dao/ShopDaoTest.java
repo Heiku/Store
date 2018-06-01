@@ -81,17 +81,30 @@ public class ShopDaoTest extends BaseTest {
         user.setUserId(1L);
 
         shopCondition.setManager(user);
+
+
+        ShopCategory childCategory = new ShopCategory();
+        ShopCategory parentCategory = new ShopCategory();
+        parentCategory.setShopCategoryId(2L);
+        childCategory.setParent(parentCategory);
+        shopCondition.setShopCategory(childCategory);
+
+
         List<Shop> shopList = shopDao.queryShopList(shopCondition, 0, 5);
         int count= shopDao.queryShopCount(shopCondition);
 
         System.out.println("店铺列表的大小：" + shopList.size());
         System.out.println("店铺数量：" + count);
 
-        ShopCategory sc = new ShopCategory();
+        for (Shop shop : shopList){
+            System.out.println(shop.getShopName());
+        }
+
+        /*ShopCategory sc = new ShopCategory();
         sc.setShopCategoryId(1L);
         shopCondition.setShopCategory(sc);
         shopList = shopDao.queryShopList(shopCondition, 0, 5);
         System.out.println("店铺列表的大小：" + shopList.size());
-        System.out.println("店铺数量：" + count);
+        System.out.println("店铺数量：" + count);*/
     }
 }

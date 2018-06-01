@@ -39,4 +39,15 @@ public interface ProductService {
      */
     ProductExecution modifyProduct(Product product, CommonsMultipartFile thumbnail,
                                    List<CommonsMultipartFile> productImgs) throws ProductOperationException;
+
+
+    /**
+     * 分页获取指定商品属性的商品列表
+     *
+     * @param product
+     * @param pageIndex
+     * @param pageSize
+     * @return
+     */
+    ProductExecution getProductList(Product product, int pageIndex, int pageSize);
 }
