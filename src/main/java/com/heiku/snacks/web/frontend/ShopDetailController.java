@@ -66,7 +66,7 @@ public class ShopDetailController {
     }
 
 
-    @RequestMapping(value = "listproductbyshop", method = RequestMethod.GET)
+    @RequestMapping(value = "listproductsbyshop", method = RequestMethod.GET)
     @ResponseBody
     private Map<String, Object> listProductByShop(HttpServletRequest request){
         Map<String, Object> modelMap = new HashMap<>();
