@@ -10,4 +10,55 @@
         order by
           priority desc
     </select>
+
+
+    <insert id="insertArea" useGeneratedKeys="true" keyColumn="area_id" keyProperty="areaId">
+        insert into
+          tb_area
+        (
+            area_name,area_desc,priority,create_time,last_edit_time
+        )values (
+            #{areaName},#{areaDesc},#{priority},#{createTime},#{lastEditTime}
+        )
+    </insert>
+
+    <update id="updateArea" parameterType="com.heiku.snacks.entity.Area">
+        update
+          tb_area
+        <set>
+            <if test="areaName != null">
+                area_name = #{areaName},
+            </if>
+            <if test="areaDesc != null">
+                area_desc = #{areaDesc},
+            </if>
+            <if test="priority != null">
+                priority = #{priority}
+            </if>
+            <if test="lastEditTime != null">
+                last_edit_time = #{lastEditTime}
+            </if>
+        </set>
+        where
+          area_id = #{areaId}
+    </update>
+
+
+    <delete id="deleteArea">
+        delete from
+          tb_area
+        where
+          area_id = #{areaId}
+    </delete>
+
+
+    <delete id="batchDeleteArea" parameterType="long">
+        delete from
+          tb_area
+        where
+          area_id in
+        <foreach collection="list" item="areaId" open="(" separator="," close=")">
+            #{areaId}
+        </foreach>
+    </delete>
 </mapper>

@@ -8,6 +8,7 @@ import java.util.Date;
 public class Area {
     private Integer areaId;
     private String areaName;
+    private String areaDesc;
     private Integer priority;
 
     // 创建时间
@@ -58,5 +59,13 @@ public class Area {
 
     public void setLastEditTime(Date lastEditTime) {
         this.lastEditTime = lastEditTime;
+    }
+
+    public String getAreaDesc() {
+        return areaDesc;
+    }
+
+    public void setAreaDesc(String areaDesc) {
+        this.areaDesc = areaDesc;
     }
 }

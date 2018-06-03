@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- Redis设置 -->
+    <bean id="JedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <!-- Pool可分配的Jedis实例-->
+        <property name="maxTotal" value="${redis.pool.maxActive}"/>
+        <!-- 连接池中可空闲的maxIdle个连接（数据库为连接时，保持空闲连接数-->
+        <property name="maxIdle" value="${redis.pool.maxIdle}"/>
+        <!-- 没有可用连接时，连接池等待连接被归还的最大时间 -->
+        <property name="maxWaitMillis" value="${redis.pool.maxWait}"/>
+        <!-- 连接检查有效性-->
+        <property name="testOnBorrow" value="${redis.pool.testOnBorrow}"/>
+    </bean>
+
+    <!-- 创建Redis连接池配置 -->
+    <bean id="jedisWritePool" class="com.heiku.snacks.cache.JedisPoolWriper" depends-on="JedisPoolConfig">
+        <constructor-arg index="0" ref="JedisPoolConfig"/>
+        <constructor-arg index="1" value="${redis.hostname}"/>
+        <constructor-arg index="2" value="${redis.port}" type="int"/>
+    </bean>
+
+    <bean id="jedisKeys" class="com.heiku.snacks.cache.JedisUtil$Keys"
+          scope="singleton">
+        <constructor-arg ref="jedisUtil"></constructor-arg>
+    </bean>
+    <bean id="jedisStrings" class="com.heiku.snacks.cache.JedisUtil$Strings"
+          scope="singleton">
+        <constructor-arg ref="jedisUtil"></constructor-arg>
+    </bean>
+    <bean id="jedisLists" class="com.heiku.snacks.cache.JedisUtil$Lists"
+          scope="singleton">
+        <constructor-arg ref="jedisUtil"></constructor-arg>
+    </bean>
+    <bean id="jedisSets" class="com.heiku.snacks.cache.JedisUtil$Sets"
+          scope="singleton">
+        <constructor-arg ref="jedisUtil"></constructor-arg>
+    </bean>
+    <bean id="jedisHash" class="com.heiku.snacks.cache.JedisUtil$Hash"
+          scope="singleton">
+        <constructor-arg ref="jedisUtil"></constructor-arg>
+    </bean>
+
+    <!-- JedisUtil -->
+    <bean id="jedisUtil" class="com.heiku.snacks.cache.JedisUtil" scope="singleton">
+        <property name="jedisPool">
+            <ref bean="jedisWritePool"/>
+        </property>
+    </bean>
+</beans>
