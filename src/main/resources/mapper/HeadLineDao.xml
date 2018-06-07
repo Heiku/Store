@@ -36,4 +36,51 @@
             #{createTime},#{lastEditTime}
         )
     </insert>
+
+    <update id="updateHeadLine" parameterType="com.heiku.snacks.entity.HeadLine">
+        update 
+          tb_head_line
+        <set>
+            <if test="lineName != null">line_name = #{lineName},</if>
+            <if test="lineLink != null">line_link = #{lineLink},</if>
+            <if test="lineImg != null">line_img = #{lineImg},</if>
+            <if test="priority != null">priority = #{priority},</if>
+            <if test="enableStatus != null">enable_status = #{enableStatus},</if>
+            <if test="lastEditTime != null">last_edit_time = #{lastEditTime}</if>
+        </set>
+        where 
+          line_id = #{lineId}
+    </update>
+    
+    <delete id="deleteHeadLine">
+        delete from
+          tb_head_line
+        where
+          line_id = #{lineId}
+    </delete>
+
+
+    <select id="queryHeadLineById" resultType="com.heiku.snacks.entity.HeadLine" parameterType="long">
+        select
+          line_id,line_name,line_link,line_img,
+          priority,enable_status,create_time,last_edit_time
+        from
+          tb_head_line
+        where
+          line_id = #{lineId}
+    </select>
+
+
+    <select id="queryHeadLineByIds" resultType="com.heiku.snacks.entity.HeadLine" parameterType="long">
+         select
+          line_id,line_name,line_link,line_img,
+          priority,enable_status,create_time,last_edit_time
+        from
+          tb_head_line
+        where
+          line_id in
+        <foreach collection="list" item="lineId" open="(" separator="," close=")">
+            #{lineId}
+        </foreach>
+    </select>
 </mapper>

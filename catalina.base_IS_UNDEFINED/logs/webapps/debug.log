@@ -1,8 +1,11 @@
-2018-06-03 18:12:37.751[main]DEBUG com.heiku.snacks.dao.AreaDao.queryArea - ==>  Preparing: select area_id,area_name,priority,create_time,last_edit_time from tb_area order by priority desc 
-2018-06-03 18:12:37.856[main]DEBUG com.heiku.snacks.dao.AreaDao.queryArea - ==> Parameters: 
-2018-06-03 18:12:37.902[main]DEBUG com.heiku.snacks.dao.AreaDao.queryArea - <==      Total: 4
-2018-06-03 21:24:08.035[main]DEBUG com.heiku.snacks.dao.AreaDao.insertArea - ==>  Preparing: insert into tb_area ( area_name,area_desc,priority,create_time,last_edit_time )values ( ?,?,?,?,? ) 
-2018-06-03 21:25:53.789[main]DEBUG com.heiku.snacks.dao.AreaDao.insertArea - ==>  Preparing: insert into tb_area ( area_name,area_desc,priority,create_time,last_edit_time )values ( ?,?,?,?,? ) 
-2018-06-03 21:26:32.950[main]DEBUG com.heiku.snacks.dao.AreaDao.insertArea - ==>  Preparing: insert into tb_area ( area_name,area_desc,priority,create_time,last_edit_time )values ( ?,?,?,?,? ) 
-2018-06-03 21:26:32.988[main]DEBUG com.heiku.snacks.dao.AreaDao.insertArea - ==> Parameters: 开发区(String), null, 2(Integer), 2018-06-03 21:26:32.914(Timestamp), 2018-06-03 21:26:32.914(Timestamp)
-2018-06-03 21:26:33.023[main]DEBUG com.heiku.snacks.dao.AreaDao.insertArea - <==    Updates: 1
+2018-06-07 16:09:51.516[main]DEBUG com.heiku.snacks.dao.HeadLineDao.queryHeadLineById - ==>  Preparing: select line_id,line_name,line_link,line_img, priority,enable_status,create_time,last_edit_time from tb_head_line where line_id = ? 
+2018-06-07 16:09:51.591[main]DEBUG com.heiku.snacks.dao.HeadLineDao.queryHeadLineById - ==> Parameters: 2(Long)
+2018-06-07 16:09:51.608[main]DEBUG com.heiku.snacks.dao.HeadLineDao.queryHeadLineById - <==      Total: 1
+2018-06-07 16:12:41.542[main]DEBUG com.heiku.snacks.dao.HeadLineDao.updateHeadLine - ==>  Preparing: update tb_head_line SET line_name = ? last_edit_time = ? where line_id = ? 
+2018-06-07 16:12:41.600[main]DEBUG com.heiku.snacks.dao.HeadLineDao.updateHeadLine - ==> Parameters: new HeadLine Name(String), 2018-06-07 16:12:41.181(Timestamp), 2(Long)
+2018-06-07 16:14:14.144[main]DEBUG com.heiku.snacks.dao.HeadLineDao.updateHeadLine - ==>  Preparing: update tb_head_line SET line_name = ?, last_edit_time = ? where line_id = ? 
+2018-06-07 16:14:14.193[main]DEBUG com.heiku.snacks.dao.HeadLineDao.updateHeadLine - ==> Parameters: new HeadLine Name(String), 2018-06-07 16:14:13.724(Timestamp), 2(Long)
+2018-06-07 16:14:14.361[main]DEBUG com.heiku.snacks.dao.HeadLineDao.updateHeadLine - <==    Updates: 1
+2018-06-07 16:16:18.208[main]DEBUG c.heiku.snacks.dao.HeadLineDao.queryHeadLineByIds - ==>  Preparing: select line_id,line_name,line_link,line_img, priority,enable_status,create_time,last_edit_time from tb_head_line where line_id in ( ? , ? ) 
+2018-06-07 16:16:18.263[main]DEBUG c.heiku.snacks.dao.HeadLineDao.queryHeadLineByIds - ==> Parameters: 1(Long), 2(Long)
+2018-06-07 16:16:18.321[main]DEBUG c.heiku.snacks.dao.HeadLineDao.queryHeadLineByIds - <==      Total: 2

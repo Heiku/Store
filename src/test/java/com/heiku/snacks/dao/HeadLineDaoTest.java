@@ -5,6 +5,7 @@ import com.heiku.snacks.entity.HeadLine;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -38,5 +39,34 @@ public class HeadLineDaoTest extends BaseTest {
         assertEquals(4, headLines.size());
     }
 
+    @Test
+    public void testQueryHeadLineById(){
+        Long headLineId = 2L;
+        HeadLine headLine = headLineDao.queryHeadLineById(headLineId);
+        System.out.println(headLine.getLineName());
+    }
+
+
+    @Test
+    public void testUpdateHeadLine(){
+        HeadLine headLine = new HeadLine();
+        headLine.setLineId(2L);
+        headLine.setLineName("new HeadLine Name");
+        headLine.setLastEditTime(new Date());
+
+        int effectNum = headLineDao.updateHeadLine(headLine);
+        assertEquals(1, effectNum);
+    }
+
+
+    @Test
+    public void testQueryHeadLineByIds(){
+        List<Long> longs = new ArrayList<>();
+        longs.add(1L);
+        longs.add(2L);
+
+        List<HeadLine> headLineList = headLineDao.queryHeadLineByIds(longs);
+        assertEquals(2, headLineList.size());
+    }
 
 }

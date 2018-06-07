@@ -27,4 +27,78 @@
         order by
           priority desc
     </select>
+
+
+    <insert id="insertShopCategory" parameterType="com.heiku.snacks.entity.ShopCategory" useGeneratedKeys="true"
+            keyColumn="shop_category_id" keyProperty="shopCategoryId">
+        insert into
+          tb_shop_category
+        (
+          shop_category_name,shop_category_desc,shop_category_img,
+          priority,create_time,last_edit_time,parent_id
+        )
+        values
+        (
+          #{shopCategoryName},#{shopCategoryDesc},#{shopCategoryImg},
+          #{priority},#{createTime},#{lastEditTime},#{parent}
+        )
+    </insert>
+
+    <update id="updateShopCategory" parameterType="com.heiku.snacks.entity.ShopCategory">
+        update
+          tb_shop_category
+        <set>
+            <if test="shopCategoryName != null">
+                shop_category_name = #{shopCategoryName},
+            </if>
+            <if test="shopCategoryDesc != null">
+                shop_category_desc = #{shopCategoryDesc},
+            </if>
+            <if test="shopCategoryImg != null">
+                shop_categoey_img = #{shopCategoryImg},
+            </if>
+            <if test="priority != null">
+                priority = #{priority},
+            </if>
+            <if test="lastEditTime != null">
+                last_edit_time = #{lastEditTime},
+            </if>
+            <if test="parent != null">
+                parent_id = #{parent}
+            </if>
+        </set>
+        where
+          shop_category_id = #{shopCategoryId}
+    </update>
+
+    <delete id="deleteShopCategory" parameterType="long">
+        delete from
+          tb_shop_category
+        where
+          shop_category_id = #{shopCategoryId}
+    </delete>
+
+
+    <select id="queryShopCategoryById" resultType="com.heiku.snacks.entity.ShopCategory">
+        select
+          shop_category_id,shop_category_name,shop_category_desc,shop_category_img,
+          priority,create_time,last_edit_time,parent_id
+        from
+          tb_shop_category
+        where
+          shop_category_id = #{shopCategoryId}
+    </select>
+
+    <select id="queryShopCategoryByIds" resultType="com.heiku.snacks.entity.ShopCategory">
+        select
+          shop_category_id,shop_category_name,shop_category_desc,shop_category_img,
+          priority,create_time,last_edit_time,parent_id
+        from
+          tb_shop_category
+        where
+          shop_category_id in
+        <foreach collection="list" item="shopCategoryId" open="(" separator="," close=")">
+            #{shopCategoryId}
+        </foreach>
+    </select>
 </mapper>
