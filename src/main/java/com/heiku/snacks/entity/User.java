@@ -8,6 +8,7 @@ import java.util.Date;
 public class User {
     private Long userId;
     private String name;
+    private String phone;
     private String profileImg;
     private String email;
     private String gender;
@@ -91,5 +92,13 @@ public class User {
 
     public void setLastEditTime(Date lastEditTime) {
         this.lastEditTime = lastEditTime;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

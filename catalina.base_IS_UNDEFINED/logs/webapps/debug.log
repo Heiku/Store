@@ -1,39 +1,6 @@
-2018-06-08 16:29:51.533[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: insert into tb_local_auth ( username,password,user_id,create_time,last_edit_time ) values ( ?,?,?,?,? ) 
-2018-06-08 16:31:29.530[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: insert into tb_local_auth ( username,password,user_id,create_time,last_edit_time ) values ( ?,?,?,?,? ) 
-2018-06-08 16:35:02.300[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: insert into tb_local_auth ( username,password,user_id,create_time,last_edit_time ) values ( ?,?,?,?,? ) 
-2018-06-08 16:35:02.357[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.insertLocalAuth - ==> Parameters: Jame Li(String), maimaidedie(String), null, 2018-06-08 16:35:01.821(Timestamp), 2018-06-08 16:35:01.821(Timestamp)
-2018-06-08 16:39:22.549[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: insert into tb_local_auth ( username,password,user_id,create_time,last_edit_time ) values ( ?,?,?,?,? ) 
-2018-06-08 16:39:22.603[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.insertLocalAuth - ==> Parameters: Jame Li(String), maimaidedie(String), 2(Long), 2018-06-08 16:39:22.153(Timestamp), 2018-06-08 16:39:22.153(Timestamp)
-2018-06-08 16:39:22.690[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.insertLocalAuth - <==    Updates: 1
-2018-06-08 16:44:39.276[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password = ? last_edit_time = ? where user_id = ? and username = ? and password = ? 
-2018-06-08 16:45:17.701[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password = ? last_edit_time = ? where user_id = ? and username = ? and password = ? 
-2018-06-08 16:45:17.747[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: lilililili(String), 2018-06-08 16:45:17.222(Timestamp), 2(Long), Jame Li(String), maimaidedie(String)
-2018-06-08 16:45:43.286[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password = ?, last_edit_time = ? where user_id = ? and username = ? and password = ? 
-2018-06-08 16:45:43.331[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: lilililili(String), 2018-06-08 16:45:42.937(Timestamp), 2(Long), Jame Li(String), maimaidedie(String)
-2018-06-08 16:45:43.448[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 1
-2018-06-08 16:47:22.989[main]DEBUG c.heiku.snacks.dao.LocalAuthDao.queryLocalAuthById - ==>  Preparing: select l.local_auth_id, l.user_id, l.username, l.password, l.create_time, l.last_edit_time, u.user_id, u.name, u.email, u.gender, u.profile_img, u.user_type, u.enbale_status, u.create_time, u.last_edit_time from tb_local_auth l left join tb_user u on l.user_id = u.user_id where l.user_id = ? 
-2018-06-08 16:47:23.030[main]DEBUG c.heiku.snacks.dao.LocalAuthDao.queryLocalAuthById - ==> Parameters: 2(Long)
-2018-06-08 16:48:27.718[main]DEBUG c.heiku.snacks.dao.LocalAuthDao.queryLocalAuthById - ==>  Preparing: select l.local_auth_id, l.user_id, l.username, l.password, l.create_time, l.last_edit_time, u.user_id, u.name, u.email, u.gender, u.profile_img, u.user_type, u.enable_status, u.create_time, u.last_edit_time from tb_local_auth l left join tb_user u on l.user_id = u.user_id where l.user_id = ? 
-2018-06-08 16:48:27.744[main]DEBUG c.heiku.snacks.dao.LocalAuthDao.queryLocalAuthById - ==> Parameters: 2(Long)
-2018-06-08 16:48:27.882[main]DEBUG c.heiku.snacks.dao.LocalAuthDao.queryLocalAuthById - <==      Total: 1
-2018-06-08 16:50:32.927[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.checkLocalAuth - ==>  Preparing: select l.local_auth_id, l.user_id, l.username, l.password, l.create_time, l.last_edit_time, u.user_id, u.name, u.email, u.gender, u.profile_img, u.user_type, u.enbale_status, u.create_time, u.last_edit_time from tb_local_auth l left join tb_user u on l.user_id = u.user_id where l.username = ? and l.password = ? 
-2018-06-08 16:50:32.960[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.checkLocalAuth - ==> Parameters: Jame Li(String), lilililili(String)
-2018-06-08 16:51:05.290[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.checkLocalAuth - ==>  Preparing: select l.local_auth_id, l.user_id, l.username, l.password, l.create_time, l.last_edit_time, u.user_id, u.name, u.email, u.gender, u.profile_img, u.user_type, u.enable_status, u.create_time, u.last_edit_time from tb_local_auth l left join tb_user u on l.user_id = u.user_id where l.username = ? and l.password = ? 
-2018-06-08 16:51:05.337[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.checkLocalAuth - ==> Parameters: Jame Li(String), lilililili(String)
-2018-06-08 16:51:05.363[main]DEBUG com.heiku.snacks.dao.LocalAuthDao.checkLocalAuth - <==      Total: 1
-2018-06-08 18:00:08.031[main]DEBUG com.heiku.snacks.dao.UserDao.insertUser - ==>  Preparing: insert into tb_user ( name,email,gender,profile_img, enable_status,user_type,create_time,last_edit_time )values ( ?,?,?,?,?, ?,?,? ) 
-2018-06-08 18:00:29.694[main]DEBUG com.heiku.snacks.dao.UserDao.insertUser - ==>  Preparing: insert into tb_user ( name,email,gender,profile_img, enable_status,user_type,create_time,last_edit_time )values ( ?,?,?,?,?, ?,?,? ) 
-2018-06-08 18:00:29.741[main]DEBUG com.heiku.snacks.dao.UserDao.insertUser - ==> Parameters: KaKa(String), 1132825187@qq.com(String), 1(String), null, 1(Integer), 1(Integer), 2018-06-08 18:00:29.237(Timestamp), 2018-06-08 18:00:29.237(Timestamp)
-2018-06-08 18:00:29.823[main]DEBUG com.heiku.snacks.dao.UserDao.insertUser - <==    Updates: 1
-2018-06-08 18:03:06.074[main]DEBUG com.heiku.snacks.dao.UserDao.updateUser - ==>  Preparing: update tb_user SET name = ? where user_id = ? 
-2018-06-08 18:03:06.109[main]DEBUG com.heiku.snacks.dao.UserDao.updateUser - ==> Parameters: KAKA(String), 4(Long)
-2018-06-08 18:03:06.183[main]DEBUG com.heiku.snacks.dao.UserDao.updateUser - <==    Updates: 1
-2018-06-08 18:04:55.586[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserById - ==>  Preparing: select user_id, name, email, gender, profile_img, user_type, create_time, last_edit_time, enable_status from tb_user where user_id = ? 
-2018-06-08 18:04:55.630[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserById - ==> Parameters: 4(Long)
-2018-06-08 18:04:55.649[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserById - <==      Total: 1
-2018-06-08 18:05:57.049[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserList - ==>  Preparing: select user_id, name, email, gender, profile_img, user_type, create_time, last_edit_time, enable_status from tb_user WHERE enable_status = ? order by create_time desc limit ?,?; 
-2018-06-08 18:05:57.094[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserList - ==> Parameters: 1(Integer), 0(Integer), 5(Integer)
-2018-06-08 18:05:57.139[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserList - <==      Total: 4
-2018-06-08 18:06:43.741[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserCount - ==>  Preparing: select count(1) from tb_user WHERE enable_status = ? 
-2018-06-08 18:06:43.771[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserCount - ==> Parameters: 1(Integer)
-2018-06-08 18:06:43.831[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserCount - <==      Total: 1
+2018-06-18 01:21:43.093[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserList - ==>  Preparing: select user_id, name, email, gender, phone, profile_img, user_type, create_time, last_edit_time, enable_status from tb_user WHERE name like '%lin%' order by create_time desc limit ?,?; 
+2018-06-18 01:21:43.159[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserList - ==> Parameters: 0(Integer), 5(Integer)
+2018-06-18 01:21:43.217[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserList - <==      Total: 1
+2018-06-18 01:22:23.961[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserList - ==>  Preparing: select user_id, name, email, gender, phone, profile_img, user_type, create_time, last_edit_time, enable_status from tb_user WHERE name like '%lin%' order by create_time desc limit ?,?; 
+2018-06-18 01:22:24.014[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserList - ==> Parameters: 0(Integer), 5(Integer)
+2018-06-18 01:22:24.055[main]DEBUG com.heiku.snacks.dao.UserDao.queryUserList - <==      Total: 2

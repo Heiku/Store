@@ -17,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class LocalAuthServiceImpl implements LocalAuthService {
@@ -72,33 +73,39 @@ public class LocalAuthServiceImpl implements LocalAuthService {
             // 用户密码 md5 加密处理
             localAuth.setPassword(MD5Util.getMD5(localAuth.getPassword()));
 
-            if (localAuth.getUser() != null && localAuth.getUser().getUserId() != null){
+            // 图片处理
+            if (profileImg != null){
+                localAuth.getUser().setCreateTime(new Date());
+                localAuth.getUser().setLastEditTime(new Date());
+                localAuth.getUser().setEnableStatus(1);
 
-                // 图片处理
-                if (profileImg != null){
-                    localAuth.getUser().setCreateTime(new Date());
-                    localAuth.getUser().setLastEditTime(new Date());
-                    localAuth.getUser().setEnableStatus(1);
-
-                    try {
-                        addProfileImg(localAuth, profileImg);
-                    }catch (Exception e){
-                        throw new RuntimeException("error:" + e.getMessage());
-                    }
-                }
-
-                // 先添加用户
                 try {
-                    User user = localAuth.getUser();
-
-                    int effectNum = userDao.insertUser(user);
-                    if (effectNum < 0)
-                        throw new RuntimeException("添加user失败");
-
+                    addProfileImg(localAuth, profileImg);
                 }catch (Exception e){
-                    throw new RuntimeException("error: " + e.getMessage());
+                    throw new RuntimeException("error:" + e.getMessage());
                 }
             }
+
+
+            // 先添加用户
+            try {
+                User user = localAuth.getUser();
+
+                int effectNum = userDao.insertUser(user);
+                if (effectNum < 0)
+                    throw new RuntimeException("添加user失败");
+            }catch (Exception e){
+                throw new RuntimeException("error: " + e.getMessage());
+            }
+
+            long userId = 0l;
+            User userCondition = new User();
+            userCondition.setName(localAuth.getUserName());
+            List<User> users = userDao.queryUserList(userCondition, 0, 5);
+            userId = users.get(0).getUserId();
+
+
+            localAuth.getUser().setUserId(userId);
 
             // 插入账号
             int effectNum =  localAuthDao.insertLocalAuth(localAuth);

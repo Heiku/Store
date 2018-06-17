@@ -27,23 +27,23 @@
 
     <bean id="jedisKeys" class="com.heiku.snacks.cache.JedisUtil$Keys"
           scope="singleton">
-        <constructor-arg ref="jedisUtil"></constructor-arg>
+       <!-- <constructor-arg ref="jedisUtil"></constructor-arg>-->
     </bean>
     <bean id="jedisStrings" class="com.heiku.snacks.cache.JedisUtil$Strings"
           scope="singleton">
-        <constructor-arg ref="jedisUtil"></constructor-arg>
+       <!-- <constructor-arg ref="jedisUtil"></constructor-arg>-->
     </bean>
     <bean id="jedisLists" class="com.heiku.snacks.cache.JedisUtil$Lists"
           scope="singleton">
-        <constructor-arg ref="jedisUtil"></constructor-arg>
+        <!--<constructor-arg ref="jedisUtil"></constructor-arg>-->
     </bean>
     <bean id="jedisSets" class="com.heiku.snacks.cache.JedisUtil$Sets"
           scope="singleton">
-        <constructor-arg ref="jedisUtil"></constructor-arg>
+        <!--<constructor-arg ref="jedisUtil"></constructor-arg>-->
     </bean>
     <bean id="jedisHash" class="com.heiku.snacks.cache.JedisUtil$Hash"
           scope="singleton">
-        <constructor-arg ref="jedisUtil"></constructor-arg>
+        <!--<constructor-arg ref="jedisUtil"></constructor-arg>-->
     </bean>
 
     <!-- JedisUtil -->

@@ -21,8 +21,9 @@ public class UserDaoTest extends BaseTest {
     @Test
     public void insertUser() {
         User user = new User();
-        user.setName("KaKa");
+        user.setName("KaXi");
         user.setEmail("1132825187@qq.com");
+        user.setPhone("12123123123");
         user.setGender("1");
         user.setUserType(1);
         user.setCreateTime(new Date());
@@ -56,12 +57,19 @@ public class UserDaoTest extends BaseTest {
 
     @Test
     public void queryUserList() {
-        User user = new User();
+        /*User user = new User();
         user.setEnableStatus(1);
         user.setUserType(1);
 
         List<User> userList = userDao.queryUserList(user, 0, 5);
-        assertEquals(4, userList.size());
+        assertEquals(4, userList.size());*/
+
+        User user = new User();
+        user.setName("lin");
+
+        List<User> users = userDao.queryUserList(user, 0, 5);
+        assertEquals(1, users.size());
+
     }
 
     @Test
