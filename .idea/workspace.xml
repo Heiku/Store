@@ -7,11 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47005e74-4078-4fd5-9ef5-db3408773324" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopOperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopOperation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/heiku/snacks/web/shop/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heiku/snacks/web/shop/ShopManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/store/WEB-INF/classes/com/heiku/snacks/web/shop/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/store/WEB-INF/classes/com/heiku/snacks/web/shop/ShopManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopOperation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/store/resources/js/shop/shopOperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/store/resources/js/shop/shopOperation.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,71 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LocalController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/LocalController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="29" column="39" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shopList.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopList.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OwnerAuthController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/OwnerAuthController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="56" column="38" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShopManagementController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopManagementController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="45" column="41" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shopManagement.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopManagement.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shopOperation.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shopOperation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopOperation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+            <state>
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shopManage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopManage.js">
+      <file leaf-file-name="shopOperation.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopOperation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="2700">
+              <caret line="159" column="7" selection-start-line="159" selection-start-column="7" selection-end-line="159" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -201,8 +149,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="180" />
-    <option name="y" value="56" />
+    <option name="x" value="907" />
     <option name="width" value="1075" />
     <option name="height" value="1030" />
   </component>
@@ -215,7 +162,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,79 +186,6 @@
               <item name="store" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="snacks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="snacks" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="snacks" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="snacks" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="snacks" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="snacks" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="snacks" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -319,15 +193,8 @@
               <item name="store" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="store" type="b2602c69:ProjectViewProjectNode" />
@@ -335,100 +202,29 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="shopman&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/shopManage.js&#10;shopManage.js&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/shopManage.js&#10;shop&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/shopManagement.html&#10;shoplis&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/shopList.js&#10;own&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/ownerLogin.html&#10;ownerLogin&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/ownerlogin.js&#10;ow&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/ownerLogin.html&#10;Loca&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/LocalAuthDao.xml&#10;user&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/UserDao.xml&#10;Local&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/LocalAuthServiceImpl.java&#10;UserDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/test/java/com/heiku/snacks/dao/UserDaoTest.java&#10;User&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/User.java&#10;register&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/register.html&#10;re&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/register.js&#10;change&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/changepsw.js&#10;bind&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/ownerbind.js&#10;LocalAuth&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/LocalAuthServiceImpl.java&#10;ShopCate&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/ShopCategory.java&#10;Us&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/User.java&#10;LocalA&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/LocalAuth.java&#10;ShopCategoryS&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/ShopCategoryService.java&#10;addThu&#9;PSI&#9;JAVA://com.heiku.snacks.service.impl.HeadLineServiceImpl#addThumbnail&#10;ShopCategoryService&#9;PSI&#9;JAVA://com.heiku.snacks.service.ShopCategoryService&#10;ShopCategory&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/ShopCategoryDao.xml&#10;Shopcate&#9;PSI&#9;JAVA://com.heiku.snacks.dao.ShopCategoryDao&#10;Area&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/AreaServiceImpl.java&#10;hdao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/HeadLineDao.xml&#10;HeadLineDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/HeadLineDao.java&#10;HeadLi&#9;PSI&#9;JAVA://com.heiku.snacks.service.HeadLineService&#10;Head&#9;PSI&#9;JAVA://com.heiku.snacks.service.impl.HeadLineServiceImpl&#10;AreaDAO&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/AreaDao.java&#10;AreaDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/AreaDao.java&#10;AreaDa&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/AreaDao.xml&#10;AreaD&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/AreaDao.java&#10;AreaService&#9;PSI&#9;JAVA://com.heiku.snacks.service.AreaService&#10;AreaSer&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/AreaServiceImpl.java&#10;poxm&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/pom.xml&#10;ProductDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/ProductDao.xml&#10;ProductDa&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/ProductDao.java&#10;ProductServiceIm&#9;PSI&#9;JAVA://com.heiku.snacks.service.impl.ProductServiceImpl&#10;ProductService&#9;PSI&#9;JAVA://com.heiku.snacks.service.ProductService" />
+    <property name="SearchEverywhereHistoryKey" value="sop&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/shopOperation.html&#10;shopman&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/shopManage.js&#10;shopManage.js&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/shopManage.js&#10;shop&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/shopManagement.html&#10;shoplis&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/shopList.js&#10;own&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/ownerLogin.html&#10;ownerLogin&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/ownerlogin.js&#10;ow&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/ownerLogin.html&#10;Loca&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/LocalAuthDao.xml&#10;user&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/UserDao.xml&#10;Local&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/LocalAuthServiceImpl.java&#10;UserDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/test/java/com/heiku/snacks/dao/UserDaoTest.java&#10;User&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/User.java&#10;register&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/register.html&#10;re&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/register.js&#10;change&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/changepsw.js&#10;bind&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/ownerbind.js&#10;LocalAuth&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/LocalAuthServiceImpl.java&#10;ShopCate&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/ShopCategory.java&#10;Us&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/User.java&#10;LocalA&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/LocalAuth.java&#10;ShopCategoryS&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/ShopCategoryService.java&#10;addThu&#9;PSI&#9;JAVA://com.heiku.snacks.service.impl.HeadLineServiceImpl#addThumbnail&#10;ShopCategoryService&#9;PSI&#9;JAVA://com.heiku.snacks.service.ShopCategoryService&#10;ShopCategory&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/ShopCategoryDao.xml&#10;Shopcate&#9;PSI&#9;JAVA://com.heiku.snacks.dao.ShopCategoryDao&#10;Area&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/AreaServiceImpl.java&#10;hdao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/HeadLineDao.xml&#10;HeadLineDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/HeadLineDao.java&#10;HeadLi&#9;PSI&#9;JAVA://com.heiku.snacks.service.HeadLineService&#10;Head&#9;PSI&#9;JAVA://com.heiku.snacks.service.impl.HeadLineServiceImpl&#10;AreaDAO&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/AreaDao.java&#10;AreaDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/AreaDao.java&#10;AreaDa&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/AreaDao.xml&#10;AreaD&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/AreaDao.java&#10;AreaService&#9;PSI&#9;JAVA://com.heiku.snacks.service.AreaService&#10;AreaSer&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/AreaServiceImpl.java&#10;poxm&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/pom.xml&#10;ProductDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/ProductDao.xml&#10;ProductDa&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/ProductDao.java&#10;ProductServiceIm&#9;PSI&#9;JAVA://com.heiku.snacks.service.impl.ProductServiceImpl&#10;ProductService&#9;PSI&#9;JAVA://com.heiku.snacks.service.ProductService" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="D:/projectdev/image/upload" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.heiku.snacks.dao" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\WEB-INF\html\shop" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\resources\js\shop" />
@@ -436,6 +232,12 @@
       <recent name="E:\Java\projects\SISE\Spring\store\src\main\java\com\heiku\snacks\cache" />
       <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\resources\js\frontend" />
       <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\resources\css\frontend" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Java\projects\SISE\Spring\store\src\main\webapp\WEB-INF\html\shop" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -596,6 +398,8 @@
       <listeners />
     </configuration>
     <configuration name="store" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M15" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="store:war exploded">
@@ -714,7 +518,8 @@
       <workItem from="1528900168488" duration="829000" />
       <workItem from="1529224749948" duration="22183000" />
       <workItem from="1529308189205" duration="4356000" />
-      <workItem from="1529313944362" duration="315000" />
+      <workItem from="1529313944362" duration="1365000" />
+      <workItem from="1529325243302" duration="424000" />
     </task>
     <servers />
   </component>
@@ -751,14 +556,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107328000" />
+    <option name="totallyTimeSpent" value="108802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026042" side_tool="true" weight="0.2941989" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026042" side_tool="true" weight="0.36878452" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32872927" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -776,19 +580,19 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49804688" visible="true" weight="0.36878452" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739584" weight="0.36878452" />
       <window_info anchor="bottom" id="Spring" order="14" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49739584" weight="0.21241379" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25325522" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49739584" weight="0.21132597" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25325522" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32872927" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32872927" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32872927" />
@@ -1187,26 +991,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/OwnerAuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="56" column="38" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
           <caret line="40" column="60" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="60" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopOperation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopManagementController.java">
@@ -1230,12 +1019,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopOperation.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/OwnerAuthController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+        <state relative-caret-position="684">
+          <caret line="56" column="38" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="38" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopOperation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopOperation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2700">
+          <caret line="159" column="7" selection-start-line="159" selection-start-column="7" selection-end-line="159" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>store:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>store</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: c3p0:c3p0:0.9.1.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
