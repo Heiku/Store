@@ -72,7 +72,7 @@ public class ShopManagementController {
      * 初始化获取所有商铺列表 和 区域列表
      * @return
      */
-    @RequestMapping(value = "getshopinitinfo", method = RequestMethod.GET)
+    @RequestMapping(value = "/getshopinitinfo", method = RequestMethod.GET)
     @ResponseBody
     private Map<String, Object> getShopInitInfo(){
         Map<String, Object> modelMap = new HashMap<>();

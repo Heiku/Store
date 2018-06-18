@@ -8,13 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="47005e74-4078-4fd5-9ef5-db3408773324" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/impl/LocalAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/impl/LocalAuthServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/heiku/snacks/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/heiku/snacks/dao/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopOperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopOperation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/heiku/snacks/web/shop/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heiku/snacks/web/shop/ShopManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/store/WEB-INF/classes/com/heiku/snacks/web/shop/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/store/WEB-INF/classes/com/heiku/snacks/web/shop/ShopManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/store/resources/js/shop/shopOperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/store/resources/js/shop/shopOperation.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,12 +27,10 @@
       <file leaf-file-name="LocalController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/LocalController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
+            <state relative-caret-position="399">
               <caret line="29" column="39" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1090#1091#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,35 +39,56 @@
       <file leaf-file-name="shopList.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+            <state relative-caret-position="912">
+              <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shopList.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopList.js">
+      <file leaf-file-name="OwnerAuthController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/OwnerAuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="47" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="47" />
+            <state relative-caret-position="684">
+              <caret line="56" column="38" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShopManagementController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShopManagementController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopManagementController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="288" column="29" lean-forward="true" selection-start-line="288" selection-start-column="29" selection-end-line="288" selection-end-column="29" />
+            <state relative-caret-position="361">
+              <caret line="45" column="41" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ownerlogin.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/ownerlogin.js">
+      <file leaf-file-name="shopManagement.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopManagement.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="32" column="64" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="64" />
+            <state relative-caret-position="513">
+              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopOperation.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopOperation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopManage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopManage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -96,6 +113,8 @@
       <find>Keys</find>
       <find>parent</find>
       <find>userId</find>
+      <find>getshoplist</find>
+      <find>getshopbyid</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -104,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/cache/JedisUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-redis.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/dto/AreaExecution.java" />
@@ -146,15 +164,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/forgetpsw.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/ownerlogin.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/changepsw.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/OwnerAuthController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/register.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/heiku/snacks/dao/UserDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/impl/LocalAuthServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/LocalController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopList.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/LocalController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/OwnerAuthController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopManagementController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopOperation.js" />
       </list>
     </option>
   </component>
@@ -182,9 +201,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="885" />
-    <option name="y" value="5" />
-    <option name="width" value="1073" />
+    <option name="x" value="180" />
+    <option name="y" value="56" />
+    <option name="width" value="1075" />
     <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -195,8 +214,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -390,11 +409,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Loca&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/LocalAuthDao.xml&#10;user&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/UserDao.xml&#10;Local&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/LocalAuthServiceImpl.java&#10;UserDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/test/java/com/heiku/snacks/dao/UserDaoTest.java&#10;User&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/User.java&#10;register&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/register.html&#10;re&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/register.js&#10;change&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/changepsw.js&#10;bind&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/ownerbind.js&#10;LocalAuth&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/LocalAuthServiceImpl.java&#10;ShopCate&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/ShopCategory.java&#10;Us&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/User.java&#10;LocalA&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/LocalAuth.java&#10;ShopCategoryS&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/ShopCategoryService.java&#10;addThu&#9;PSI&#9;JAVA://com.heiku.snacks.service.impl.HeadLineServiceImpl#addThumbnail&#10;ShopCategoryService&#9;PSI&#9;JAVA://com.heiku.snacks.service.ShopCategoryService&#10;ShopCategory&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/ShopCategoryDao.xml&#10;Shopcate&#9;PSI&#9;JAVA://com.heiku.snacks.dao.ShopCategoryDao&#10;Area&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/AreaServiceImpl.java&#10;hdao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/HeadLineDao.xml&#10;HeadLineDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/HeadLineDao.java&#10;HeadLi&#9;PSI&#9;JAVA://com.heiku.snacks.service.HeadLineService&#10;Head&#9;PSI&#9;JAVA://com.heiku.snacks.service.impl.HeadLineServiceImpl&#10;AreaDAO&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/AreaDao.java&#10;AreaDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/AreaDao.java&#10;AreaDa&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/AreaDao.xml&#10;AreaD&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/AreaDao.java&#10;AreaService&#9;PSI&#9;JAVA://com.heiku.snacks.service.AreaService&#10;AreaSer&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/AreaServiceImpl.java&#10;poxm&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/pom.xml&#10;ProductDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/ProductDao.xml&#10;ProductDa&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/ProductDao.java&#10;ProductServiceIm&#9;PSI&#9;JAVA://com.heiku.snacks.service.impl.ProductServiceImpl&#10;ProductService&#9;PSI&#9;JAVA://com.heiku.snacks.service.ProductService" />
+    <property name="SearchEverywhereHistoryKey" value="shopman&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/shopManage.js&#10;shopManage.js&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/shopManage.js&#10;shop&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/shopManagement.html&#10;shoplis&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/shopList.js&#10;own&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/ownerLogin.html&#10;ownerLogin&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/ownerlogin.js&#10;ow&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/ownerLogin.html&#10;Loca&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/LocalAuthDao.xml&#10;user&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/UserDao.xml&#10;Local&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/LocalAuthServiceImpl.java&#10;UserDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/test/java/com/heiku/snacks/dao/UserDaoTest.java&#10;User&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/User.java&#10;register&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/WEB-INF/html/shop/register.html&#10;re&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/register.js&#10;change&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/changepsw.js&#10;bind&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/webapp/resources/js/shop/ownerbind.js&#10;LocalAuth&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/LocalAuthServiceImpl.java&#10;ShopCate&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/ShopCategory.java&#10;Us&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/User.java&#10;LocalA&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/entity/LocalAuth.java&#10;ShopCategoryS&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/ShopCategoryService.java&#10;addThu&#9;PSI&#9;JAVA://com.heiku.snacks.service.impl.HeadLineServiceImpl#addThumbnail&#10;ShopCategoryService&#9;PSI&#9;JAVA://com.heiku.snacks.service.ShopCategoryService&#10;ShopCategory&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/ShopCategoryDao.xml&#10;Shopcate&#9;PSI&#9;JAVA://com.heiku.snacks.dao.ShopCategoryDao&#10;Area&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/AreaServiceImpl.java&#10;hdao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/HeadLineDao.xml&#10;HeadLineDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/HeadLineDao.java&#10;HeadLi&#9;PSI&#9;JAVA://com.heiku.snacks.service.HeadLineService&#10;Head&#9;PSI&#9;JAVA://com.heiku.snacks.service.impl.HeadLineServiceImpl&#10;AreaDAO&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/AreaDao.java&#10;AreaDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/AreaDao.java&#10;AreaDa&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/AreaDao.xml&#10;AreaD&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/AreaDao.java&#10;AreaService&#9;PSI&#9;JAVA://com.heiku.snacks.service.AreaService&#10;AreaSer&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/service/impl/AreaServiceImpl.java&#10;poxm&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/pom.xml&#10;ProductDao&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/resources/mapper/ProductDao.xml&#10;ProductDa&#9;FILE&#9;file://E:/Java/projects/SISE/Spring/store/src/main/java/com/heiku/snacks/dao/ProductDao.java&#10;ProductServiceIm&#9;PSI&#9;JAVA://com.heiku.snacks.service.impl.ProductServiceImpl&#10;ProductService&#9;PSI&#9;JAVA://com.heiku.snacks.service.ProductService" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -655,10 +674,10 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.store" />
+      <item itemvalue="Application.MD5Util" />
       <item itemvalue="JUnit.UserDaoTest.queryUserById" />
       <item itemvalue="JUnit.UserDaoTest.queryUserList" />
       <item itemvalue="JUnit.UserDaoTest.queryUserCount" />
-      <item itemvalue="Application.MD5Util" />
       <item itemvalue="JUnit.UserDaoTest.insertUser" />
     </list>
     <recent_temporary>
@@ -693,7 +712,9 @@
       <workItem from="1528443170935" duration="14129000" />
       <workItem from="1528526872345" duration="212000" />
       <workItem from="1528900168488" duration="829000" />
-      <workItem from="1529224749948" duration="21503000" />
+      <workItem from="1529224749948" duration="22183000" />
+      <workItem from="1529308189205" duration="4356000" />
+      <workItem from="1529313944362" duration="315000" />
     </task>
     <servers />
   </component>
@@ -730,14 +751,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101977000" />
+    <option name="totallyTimeSpent" value="107328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5019531" side_tool="true" weight="0.2941989" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026042" side_tool="true" weight="0.2941989" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32872927" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -747,7 +768,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49804688" weight="0.2941989" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49739584" weight="0.2941989" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49934897" weight="0.32458565" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -755,12 +776,11 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49804688" visible="true" weight="0.34944752" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49804688" visible="true" weight="0.36878452" />
       <window_info anchor="bottom" id="Spring" order="14" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49739584" weight="0.21270718" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25325522" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49739584" weight="0.21241379" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25325522" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32872927" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -768,40 +788,41 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32872927" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32872927" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49804688" weight="0.3577348" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49804688" weight="0.36878452" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49739584" weight="0.21270718" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49739584" weight="0.21241379" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026042" side_tool="true" weight="0.38482758" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026042" side_tool="true" weight="0.2941989" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49934897" weight="0.32458565" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22526042" />
-      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32872927" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49934897" weight="0.32458565" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25325522" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29427084" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32872927" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49739584" visible="true" weight="0.2941989" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -813,12 +834,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/OwnerAuthController.java</url>
-          <line>126</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/impl/LocalAuthServiceImpl.java</url>
           <line>91</line>
@@ -855,45 +870,11 @@
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/OwnerAuthController.java</url>
-          <line>129</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="39" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/entity/Area.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/enums/AreaStateEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/redis.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/dao/AreaDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -929,16 +910,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/forgetpsw.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/service/LocalAuthService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -981,11 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
-          <folding>
-            <element signature="e#1862#1863#0" expanded="true" />
-            <element signature="e#1904#1905#0" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1014,9 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,14 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="157" selection-start-line="157" selection-end-line="157" />
-          <folding>
-            <element signature="e#16391#16392#0" expanded="true" />
-            <element signature="e#16445#16446#0" expanded="true" />
-            <element signature="e#16863#16864#0" expanded="true" />
-            <element signature="e#16916#16917#0" expanded="true" />
-            <element signature="e#16959#16960#0" expanded="true" />
-            <element signature="e#17020#17021#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1063,10 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#1507#1671#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1105,20 +1060,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE.jar!/org/springframework/web/context/request/async/StandardServletAsyncWebRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="e#1699#1700#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1133,9 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#1743#1744#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1157,9 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="397" selection-start-line="397" selection-end-line="397" />
-          <folding>
-            <element signature="e#13621#13622#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1174,11 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="193" selection-start-line="193" selection-end-line="193" />
-          <folding>
-            <element signature="e#6398#6399#0" expanded="true" />
-            <element signature="e#6963#6964#0" expanded="true" />
-            <element signature="e#7022#7023#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1203,46 +1137,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/ownerlogin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="32" column="64" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/frontend/ShopListController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="121" column="61" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/OwnerAuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/LocalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1253,17 +1151,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/ownerlogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/ownerLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/LocalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/OwnerAuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="56" column="38" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="47" />
+        <state relative-caret-position="427">
+          <caret line="40" column="60" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="60" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopOperation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/snacks/web/shop/ShopManagementController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="288" column="29" lean-forward="true" selection-start-line="288" selection-start-column="29" selection-end-line="288" selection-end-column="29" />
+        <state relative-caret-position="361">
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopManagement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopOperation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
         </state>
       </provider>
     </entry>

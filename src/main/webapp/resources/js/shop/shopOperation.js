@@ -4,8 +4,10 @@ $(function() {
 
     var isEdit = shopId ? true : false;
 
-    var shopInfoUrl = '/store/shop/getshopbyid?shopId=1';
-    // var shopInfoUrl = '/store/shopadmin/getshopbyid?shopId=' + shopId;
+    /*var shopInfoUrl = '/store/shopadmin/getshopbyid?shopId=1';*/
+
+
+    var shopInfoUrl = '/store/shopadmin/getshopbyid?shopId=' + shopId;
     var initUrl = '/store/shopadmin/getshopinitinfo';
     var editShopUrl = '/store/shopadmin/registershop';
     if (isEdit) {
